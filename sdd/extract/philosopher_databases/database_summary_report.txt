@@ -1,0 +1,68 @@
+DINING PHILOSOPHER DATABASE SUMMARY REPORT
+==================================================
+
+Problem sizes: 2 to 40 philosophers
+Total databases: 39
+
+Individual Databases:
+------------------------------
+Phil  2:   5 states,  32 transitions,   0 configurations
+Phil  3:   5 states,  32 transitions,   0 configurations
+Phil  4:   5 states,  32 transitions,   0 configurations
+Phil  5:   5 states,  32 transitions,   0 configurations
+Phil  6:   5 states,  32 transitions,   0 configurations
+Phil  7:   5 states,  32 transitions,   0 configurations
+Phil  8:   5 states,  32 transitions,   0 configurations
+Phil  9:   5 states,  32 transitions,   0 configurations
+Phil 10:   5 states,  32 transitions,   0 configurations
+Phil 11:   5 states,  32 transitions,   0 configurations
+Phil 12:   5 states,  32 transitions,   0 configurations
+Phil 13:   5 states,  32 transitions,   0 configurations
+Phil 14:   5 states,  32 transitions,   0 configurations
+Phil 15:   5 states,  32 transitions,   0 configurations
+Phil 16:   5 states,  32 transitions,   0 configurations
+Phil 17:   5 states,  32 transitions,   0 configurations
+Phil 18:   5 states,  32 transitions,   0 configurations
+Phil 19:   5 states,  32 transitions,   0 configurations
+Phil 20:   5 states,  32 transitions,   0 configurations
+Phil 21:   5 states,  32 transitions,   0 configurations
+Phil 22:   5 states,  32 transitions,   0 configurations
+Phil 23:   5 states,  32 transitions,   0 configurations
+Phil 24:   5 states,  32 transitions,   0 configurations
+Phil 25:   5 states,  32 transitions,   0 configurations
+Phil 26:   5 states,  32 transitions,   0 configurations
+Phil 27:   5 states,  32 transitions,   0 configurations
+Phil 28:   5 states,  32 transitions,   0 configurations
+Phil 29:   5 states,  32 transitions,   0 configurations
+Phil 30:   5 states,  32 transitions,   0 configurations
+Phil 31:   5 states,  32 transitions,   0 configurations
+Phil 32:   5 states,  32 transitions,   0 configurations
+Phil 33:   5 states,  32 transitions,   0 configurations
+Phil 34:   5 states,  32 transitions,   0 configurations
+Phil 35:   5 states,  32 transitions,   0 configurations
+Phil 36:   5 states,  32 transitions,   0 configurations
+Phil 37:   5 states,  32 transitions,   0 configurations
+Phil 38:   5 states,  32 transitions,   0 configurations
+Phil 39:   5 states,  32 transitions,   0 configurations
+Phil 40:   5 states,  32 transitions,   0 configurations
+
+Combined Database: up_to_40_phil_database.db
+Contains all problem sizes with prefixed state IDs
+
+File Structure:
+--------------------
+Base directory: philosopher_databases/
+├── phil_2/
+│   ├── s0.gst, s1.gst, s2.gst, s3.gst, s4.gst
+│   ├── phil_2_transitions.dot
+│   └── phil_2_lts.gxl
+├── phil_3/
+│   └── ...
+└── ...
+
+Database Schema:
+--------------------
+states: state_id, state_name, is_start_state, is_final_state, has_reach_property, description, problem_size
+state_configurations: state_id, node_id, node_type, node_state, left_fork_id, right_fork_id, problem_size
+transitions: from_state, to_state, action, transition_type, problem_size
+problem_sizes: problem_size, num_philosophers, num_forks, database_path, created_date
