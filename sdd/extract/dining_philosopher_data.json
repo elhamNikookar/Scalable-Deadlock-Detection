@@ -1,0 +1,222 @@
+{
+  "states": [
+    {
+      "state_id": "s0",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s1",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s2",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s3",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s4",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s5",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s6",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s7",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s8",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    },
+    {
+      "state_id": "s9",
+      "is_start_state": 0,
+      "is_final_state": 0,
+      "has_reach_property": 0,
+      "philosopher_count": 2,
+      "fork_count": 2
+    }
+  ],
+  "transitions": [
+    {
+      "from_state": "n0",
+      "to_state": "n1",
+      "action": "go-hungry",
+      "frequency": 2
+    },
+    {
+      "from_state": "n1",
+      "to_state": "n2",
+      "action": "get-left",
+      "frequency": 1
+    },
+    {
+      "from_state": "n1",
+      "to_state": "n3",
+      "action": "go-hungry",
+      "frequency": 1
+    },
+    {
+      "from_state": "n2",
+      "to_state": "n4",
+      "action": "get-right",
+      "frequency": 1
+    },
+    {
+      "from_state": "n2",
+      "to_state": "n5",
+      "action": "go-hungry",
+      "frequency": 1
+    },
+    {
+      "from_state": "n3",
+      "to_state": "n5",
+      "action": "get-left",
+      "frequency": 2
+    },
+    {
+      "from_state": "n4",
+      "to_state": "n6",
+      "action": "go-hungry",
+      "frequency": 1
+    },
+    {
+      "from_state": "n4",
+      "to_state": "n7",
+      "action": "release-left",
+      "frequency": 1
+    },
+    {
+      "from_state": "n5",
+      "to_state": "n6",
+      "action": "get-right",
+      "frequency": 1
+    },
+    {
+      "from_state": "n5",
+      "to_state": "n8",
+      "action": "get-left",
+      "frequency": 1
+    },
+    {
+      "from_state": "n6",
+      "to_state": "n9",
+      "action": "release-left",
+      "frequency": 1
+    },
+    {
+      "from_state": "n7",
+      "to_state": "n0",
+      "action": "release-right",
+      "frequency": 1
+    },
+    {
+      "from_state": "n7",
+      "to_state": "n9",
+      "action": "go-hungry",
+      "frequency": 1
+    },
+    {
+      "from_state": "n9",
+      "to_state": "n1",
+      "action": "release-right",
+      "frequency": 1
+    }
+  ],
+  "actions": [
+    {
+      "action_name": "go-hungry",
+      "description": "Philosopher becomes hungry",
+      "category": "hunger"
+    },
+    {
+      "action_name": "get-left",
+      "description": "Philosopher picks up left fork",
+      "category": "fork_acquisition"
+    },
+    {
+      "action_name": "get-right",
+      "description": "Philosopher picks up right fork",
+      "category": "fork_acquisition"
+    },
+    {
+      "action_name": "release-left",
+      "description": "Philosopher releases left fork",
+      "category": "fork_release"
+    },
+    {
+      "action_name": "release-right",
+      "description": "Philosopher releases right fork",
+      "category": "fork_release"
+    },
+    {
+      "action_name": "think",
+      "description": "Philosopher is thinking",
+      "category": "philosophy"
+    },
+    {
+      "action_name": "hungry",
+      "description": "Philosopher is hungry",
+      "category": "hunger"
+    },
+    {
+      "action_name": "start",
+      "description": "Initial state",
+      "category": "system"
+    },
+    {
+      "action_name": "final",
+      "description": "Final state",
+      "category": "system"
+    },
+    {
+      "action_name": "reach_2",
+      "description": "Reachability property",
+      "category": "property"
+    }
+  ]
+}

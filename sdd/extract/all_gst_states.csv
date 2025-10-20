@@ -1,0 +1,11 @@
+Phil_0_state,Phil_1_state,filename
+think,think,s0.gst
+hungry,think,s1.gst
+hasLeft,think,s2.gst
+hungry,hungry,s3.gst
+eat,think,s4.gst
+hasLeft,hungry,s5.gst
+eat,hungry,s6.gst
+hasRight,think,s7.gst
+hasLeft,hasLeft,s8.gst
+hasRight,hungry,s9.gst
