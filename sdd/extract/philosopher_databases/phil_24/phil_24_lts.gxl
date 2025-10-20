@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+  <graph id="lts_24_philosophers" edgeids="false" edgemode="directed">
+    <attr name="problem_size">
+      <int>24</int>
+    </attr>
+    
+    <!-- States -->
+    <node id="s0">
+      <attr name="type">
+        <string>State</string>
+      </attr>
+      <attr name="properties">
+        <string>start</string>
+      </attr>
+      <attr name="description">
+        <string>Initial state - all philosophers thinking</string>
+      </attr>
+    </node>
+    
+    <node id="s1">
+      <attr name="type">
+        <string>State</string>
+      </attr>
+      <attr name="properties">
+        <string>intermediate</string>
+      </attr>
+      <attr name="description">
+        <string>One philosopher hungry</string>
+      </attr>
+    </node>
+    
+    <node id="s2">
+      <attr name="type">
+        <string>State</string>
+      </attr>
+      <attr name="properties">
+        <string>intermediate</string>
+      </attr>
+      <attr name="description">
+        <string>One philosopher eating</string>
+      </attr>
+    </node>
+    
+    <node id="s3">
+      <attr name="type">
+        <string>State</string>
+      </attr>
+      <attr name="properties">
+        <string>intermediate</string>
+      </attr>
+      <attr name="description">
+        <string>Two philosophers hungry</string>
+      </attr>
+    </node>
+    
+    <node id="s4">
+      <attr name="type">
+        <string>State</string>
+      </attr>
+      <attr name="properties">
+        <string>final, reach_2</string>
+      </attr>
+      <attr name="description">
+        <string>Deadlock state - all philosophers hungry with one fork each</string>
+      </attr>
+    </node>
+    
+    <!-- Transitions -->
+    <edge from="s0" to="s1">
+      <attr name="action">
+        <string>go-hungry</string>
+      </attr>
+      <attr name="philosopher">
+        <int>0</int>
+      </attr>
+    </edge>
+    
+    <edge from="s1" to="s2">
+      <attr name="action">
+        <string>get-left, get-right</string>
+      </attr>
+      <attr name="philosopher">
+        <int>0</int>
+      </attr>
+    </edge>
+    
+    <edge from="s2" to="s0">
+      <attr name="action">
+        <string>release-left, release-right</string>
+      </attr>
+      <attr name="philosopher">
+        <int>0</int>
+      </attr>
+    </edge>
+    
+    <edge from="s1" to="s3">
+      <attr name="action">
+        <string>go-hungry</string>
+      </attr>
+      <attr name="philosopher">
+        <int>1</int>
+      </attr>
+    </edge>
+    
+    <edge from="s3" to="s4">
+      <attr name="action">
+        <string>get-left</string>
+      </attr>
+      <attr name="philosopher">
+        <int>0</int>
+      </attr>
+    </edge>
+    
+    <edge from="s4" to="s3">
+      <attr name="action">
+        <string>release-left</string>
+      </attr>
+      <attr name="philosopher">
+        <int>0</int>
+      </attr>
+    </edge>
+    
+    <edge from="s2" to="s1">
+      <attr name="action">
+        <string>go-hungry</string>
+      </attr>
+      <attr name="philosopher">
+        <int>1</int>
+      </attr>
+    </edge>
+    
+    <edge from="s3" to="s2">
+      <attr name="action">
+        <string>get-left, get-right</string>
+      </attr>
+      <attr name="philosopher">
+        <int>1</int>
+      </attr>
+    </edge>
+  </graph>
+</gxl>

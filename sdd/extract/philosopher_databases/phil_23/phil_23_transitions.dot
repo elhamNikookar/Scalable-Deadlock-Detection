@@ -1,0 +1,23 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box];
+  
+  // States
+  s0 [label="s0\nAll thinking"];
+  s1 [label="s1\nOne hungry"];
+  s2 [label="s2\nOne eating"];
+  s3 [label="s3\nTwo hungry"];
+  s4 [label="s4\nDeadlock"];
+  
+  // Transitions
+  s0 -> s1 [label="go-hungry"];
+  s1 -> s2 [label="get-left, get-right"];
+  s2 -> s0 [label="release-left, release-right"];
+  s1 -> s3 [label="go-hungry"];
+  s3 -> s4 [label="get-left"];
+  s4 -> s3 [label="release-left"];
+  
+  // Additional transitions for larger systems
+  s2 -> s1 [label="go-hungry"];
+  s3 -> s2 [label="get-left, get-right"];
+}
