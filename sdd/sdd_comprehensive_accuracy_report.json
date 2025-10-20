@@ -1,0 +1,268 @@
+{
+  "timestamp": "2025-09-17 00:20:45",
+  "metrics": {
+    "total_tests": 9,
+    "correct_detections": 6,
+    "accuracy": 0.6666666666666666,
+    "precision": 0,
+    "recall": 0.0,
+    "f1_score": 0,
+    "true_positives": 0,
+    "true_negatives": 6,
+    "false_positives": 0,
+    "false_negatives": 3,
+    "avg_detection_time": 0.00012262662251790365,
+    "avg_graph_density": 0.021042635077722794
+  },
+  "detailed_results": {
+    "dining_philosophers": {
+      "name": "Dining Philosophers",
+      "results": [
+        {
+          "scenario_name": "Normal Operation",
+          "num_processes": 5,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "dining_philosophers"
+          },
+          "graph_features": {
+            "num_nodes": 10,
+            "num_edges": 10,
+            "density": 0.1111111111111111,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 10,
+            "avg_degree": 2.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "High Contention",
+          "num_processes": 10,
+          "expected_deadlock": true,
+          "detected_deadlock": false,
+          "correct_detection": false,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "dining_philosophers"
+          },
+          "graph_features": {
+            "num_nodes": 20,
+            "num_edges": 20,
+            "density": 0.05263157894736842,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 20,
+            "avg_degree": 2.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "Large System",
+          "num_processes": 20,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "dining_philosophers"
+          },
+          "graph_features": {
+            "num_nodes": 40,
+            "num_edges": 40,
+            "density": 0.02564102564102564,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 40,
+            "avg_degree": 2.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        }
+      ]
+    },
+    "bank_transfer": {
+      "name": "Bank Transfer System",
+      "results": [
+        {
+          "scenario_name": "Normal Operation",
+          "num_processes": 5,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bank_transfer"
+          },
+          "graph_features": {
+            "num_nodes": 10,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 10,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "Circular Locks",
+          "num_processes": 8,
+          "expected_deadlock": true,
+          "detected_deadlock": false,
+          "correct_detection": false,
+          "detection_time": 0.0011036396026611328,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bank_transfer"
+          },
+          "graph_features": {
+            "num_nodes": 16,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 16,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "Large System",
+          "num_processes": 15,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bank_transfer"
+          },
+          "graph_features": {
+            "num_nodes": 30,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 30,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        }
+      ]
+    },
+    "bridge_crossing": {
+      "name": "Bridge Crossing",
+      "results": [
+        {
+          "scenario_name": "Normal Operation",
+          "num_processes": 3,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bridge_crossing"
+          },
+          "graph_features": {
+            "num_nodes": 5,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 5,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "High Traffic",
+          "num_processes": 6,
+          "expected_deadlock": true,
+          "detected_deadlock": false,
+          "correct_detection": false,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bridge_crossing"
+          },
+          "graph_features": {
+            "num_nodes": 8,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 8,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        },
+        {
+          "scenario_name": "Large System",
+          "num_processes": 10,
+          "expected_deadlock": false,
+          "detected_deadlock": false,
+          "correct_detection": true,
+          "detection_time": 0.0,
+          "deadlock_info": {
+            "type": "none",
+            "cycles": [],
+            "severity": 0.0,
+            "affected_processes": [],
+            "benchmark_type": "bridge_crossing"
+          },
+          "graph_features": {
+            "num_nodes": 12,
+            "num_edges": 0,
+            "density": 0,
+            "is_strongly_connected": false,
+            "num_strongly_connected_components": 12,
+            "avg_degree": 0.0,
+            "clustering_coefficient": 0.0,
+            "num_cycles": 0,
+            "cycle_lengths": []
+          }
+        }
+      ]
+    }
+  }
+}

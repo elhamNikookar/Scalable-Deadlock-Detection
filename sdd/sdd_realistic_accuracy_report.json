@@ -1,0 +1,121 @@
+{
+  "timestamp": "2025-09-17 00:19:25",
+  "metrics": {
+    "deadlock_detection_rate": 0.0,
+    "cycle_detection_accuracy": 0.3333333333333333,
+    "overall_accuracy": 0.16666666666666666,
+    "avg_detection_time": 0.0002010345458984375,
+    "avg_severity": 0.0,
+    "total_tests": 8,
+    "deadlocks_found": 0,
+    "correct_cycles": 1
+  },
+  "deadlock_results": {
+    "dining_philosophers": {
+      "name": "Dining Philosophers",
+      "num_processes": 10,
+      "deadlock_detected": false,
+      "detection_time": 0.0010051727294921875,
+      "deadlock_info": {
+        "type": "none",
+        "cycles": [],
+        "severity": 0.0,
+        "affected_processes": [],
+        "benchmark_type": "dining_philosophers"
+      },
+      "num_cycles": 0,
+      "affected_processes": 0,
+      "severity": 0.0
+    },
+    "bank_transfer": {
+      "name": "Bank Transfer System",
+      "num_processes": 8,
+      "deadlock_detected": false,
+      "detection_time": 0.0,
+      "deadlock_info": {
+        "type": "none",
+        "cycles": [],
+        "severity": 0.0,
+        "affected_processes": [],
+        "benchmark_type": "bank_transfer"
+      },
+      "num_cycles": 0,
+      "affected_processes": 0,
+      "severity": 0.0
+    },
+    "bridge_crossing": {
+      "name": "Bridge Crossing",
+      "num_processes": 6,
+      "deadlock_detected": false,
+      "detection_time": 0.0,
+      "deadlock_info": {
+        "type": "none",
+        "cycles": [],
+        "severity": 0.0,
+        "affected_processes": [],
+        "benchmark_type": "bridge_crossing"
+      },
+      "num_cycles": 0,
+      "affected_processes": 0,
+      "severity": 0.0
+    },
+    "train_allocation": {
+      "name": "Train Allocation",
+      "num_processes": 8,
+      "deadlock_detected": false,
+      "detection_time": 0.0,
+      "deadlock_info": {
+        "type": "none",
+        "cycles": [],
+        "severity": 0.0,
+        "affected_processes": [],
+        "benchmark_type": "train_allocation"
+      },
+      "num_cycles": 0,
+      "affected_processes": 0,
+      "severity": 0.0
+    },
+    "producer_consumer": {
+      "name": "Producer-Consumer",
+      "num_processes": 10,
+      "deadlock_detected": false,
+      "detection_time": 0.0,
+      "deadlock_info": {
+        "type": "none",
+        "cycles": [],
+        "severity": 0.0,
+        "affected_processes": [],
+        "benchmark_type": "producer_consumer"
+      },
+      "num_cycles": 0,
+      "affected_processes": 0,
+      "severity": 0.0
+    }
+  },
+  "cycle_results": [
+    {
+      "name": "Simple Circular Wait",
+      "expected": true,
+      "detected": false,
+      "correct": false,
+      "cycles": 0,
+      "severity": 0.0
+    },
+    {
+      "name": "No Deadlock",
+      "expected": false,
+      "detected": false,
+      "correct": true,
+      "cycles": 0,
+      "severity": 0.0
+    },
+    {
+      "name": "Complex Deadlock",
+      "expected": true,
+      "detected": false,
+      "correct": false,
+      "cycles": 0,
+      "severity": 0.0
+    }
+  ]
+}

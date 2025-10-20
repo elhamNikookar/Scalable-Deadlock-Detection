@@ -1,0 +1,118 @@
+{
+  "timestamp": "2025-09-17 00:34:04",
+  "target_achieved": false,
+  "overall_accuracy": 0.9855555555555556,
+  "overall_precision": 1.0,
+  "overall_recall": 0.9461728395061729,
+  "overall_f1_score": 0.9659863945578232,
+  "benchmark_results": {
+    "dining_philosophers": {
+      "name": "Dining Philosophers",
+      "num_processes": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.016608238220214844,
+      "true_deadlocks": 32,
+      "predicted_deadlocks": 32,
+      "correct_predictions": 100
+    },
+    "sleeping_barber": {
+      "name": "Sleeping Barber",
+      "num_processes": 15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.004036903381347656,
+      "true_deadlocks": 29,
+      "predicted_deadlocks": 29,
+      "correct_predictions": 100
+    },
+    "producer_consumer": {
+      "name": "Producer-Consumer",
+      "num_processes": 20,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.004037618637084961,
+      "true_deadlocks": 33,
+      "predicted_deadlocks": 33,
+      "correct_predictions": 100
+    },
+    "train_allocation": {
+      "name": "Train Allocation",
+      "num_processes": 15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.004634857177734375,
+      "true_deadlocks": 33,
+      "predicted_deadlocks": 33,
+      "correct_predictions": 100
+    },
+    "cigarette_smokers": {
+      "name": "Cigarette Smokers",
+      "num_processes": 4,
+      "accuracy": 0.99,
+      "precision": 1.0,
+      "recall": 0.96,
+      "f1_score": 0.9795918367346939,
+      "execution_time": 0.003076314926147461,
+      "true_deadlocks": 25,
+      "predicted_deadlocks": 24,
+      "correct_predictions": 99
+    },
+    "rail_safety_controller": {
+      "name": "Rail Safety Controller",
+      "num_processes": 12,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.004410266876220703,
+      "true_deadlocks": 24,
+      "predicted_deadlocks": 24,
+      "correct_predictions": 100
+    },
+    "bridge_crossing": {
+      "name": "Bridge Crossing",
+      "num_processes": 10,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.001959085464477539,
+      "true_deadlocks": 30,
+      "predicted_deadlocks": 30,
+      "correct_predictions": 100
+    },
+    "bank_transfer": {
+      "name": "Bank Transfer System",
+      "num_processes": 15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "execution_time": 0.006684303283691406,
+      "true_deadlocks": 30,
+      "predicted_deadlocks": 30,
+      "correct_predictions": 100
+    },
+    "elevator_system": {
+      "name": "Elevator System",
+      "num_processes": 8,
+      "accuracy": 0.88,
+      "precision": 1.0,
+      "recall": 0.5555555555555556,
+      "f1_score": 0.7142857142857143,
+      "execution_time": 0.002174854278564453,
+      "true_deadlocks": 27,
+      "predicted_deadlocks": 15,
+      "correct_predictions": 88
+    }
+  }
+}
