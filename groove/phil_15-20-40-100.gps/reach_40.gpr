@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="deadlock_40">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n57">
+            <attr name="layout">
+                <string>225 544 32 24</string>
+            </attr>
+        </node>
+        <node id="n55">
+            <attr name="layout">
+                <string>211 505 32 24</string>
+            </attr>
+        </node>
+        <node id="n54">
+            <attr name="layout">
+                <string>236 424 32 24</string>
+            </attr>
+        </node>
+        <node id="n19">
+            <attr name="layout">
+                <string>218 465 32 24</string>
+            </attr>
+        </node>
+        <node id="n41">
+            <attr name="layout">
+                <string>216 322 32 24</string>
+            </attr>
+        </node>
+        <node id="n33">
+            <attr name="layout">
+                <string>248 294 32 24</string>
+            </attr>
+        </node>
+        <node id="n49">
+            <attr name="layout">
+                <string>342 197 32 24</string>
+            </attr>
+        </node>
+        <node id="n35">
+            <attr name="layout">
+                <string>301 207 32 24</string>
+            </attr>
+        </node>
+        <node id="n15">
+            <attr name="layout">
+                <string>566 182 32 24</string>
+            </attr>
+        </node>
+        <node id="n59">
+            <attr name="layout">
+                <string>694 177 32 24</string>
+            </attr>
+        </node>
+        <node id="n21">
+            <attr name="layout">
+                <string>945 41 54 48</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>279 264 32 24</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>625 178 32 24</string>
+            </attr>
+        </node>
+        <node id="n18">
+            <attr name="layout">
+                <string>772 541 32 24</string>
+            </attr>
+        </node>
+        <node id="n53">
+            <attr name="layout">
+                <string>879 472 32 24</string>
+            </attr>
+        </node>
+        <node id="n20">
+            <attr name="layout">
+                <string>485 159 32 24</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>401 18 54 48</string>
+            </attr>
+        </node>
+        <node id="n24">
+            <attr name="layout">
+                <string>677 30 54 48</string>
+            </attr>
+        </node>
+        <node id="n38">
+            <attr name="layout">
+                <string>27 205 54 48</string>
+            </attr>
+        </node>
+        <node id="n50">
+            <attr name="layout">
+                <string>947 389 32 24</string>
+            </attr>
+        </node>
+        <node id="n36">
+            <attr name="layout">
+                <string>173 355 32 24</string>
+            </attr>
+        </node>
+        <node id="n14">
+            <attr name="layout">
+                <string>222 682 54 48</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>1146 348 54 48</string>
+            </attr>
+        </node>
+        <node id="n32">
+            <attr name="layout">
+                <string>438 578 32 24</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>1116 432 54 48</string>
+            </attr>
+        </node>
+        <node id="n30">
+            <attr name="layout">
+                <string>203 78 54 48</string>
+            </attr>
+        </node>
+        <node id="n58">
+            <attr name="layout">
+                <string>1053 508 54 48</string>
+            </attr>
+        </node>
+        <node id="n22">
+            <attr name="layout">
+                <string>983 314 32 24</string>
+            </attr>
+        </node>
+        <node id="n56">
+            <attr name="layout">
+                <string>666 690 54 48</string>
+            </attr>
+        </node>
+        <node id="n23">
+            <attr name="layout">
+                <string>869 181 32 24</string>
+            </attr>
+        </node>
+        <node id="n28">
+            <attr name="layout">
+                <string>430 212 32 24</string>
+            </attr>
+        </node>
+        <node id="n44">
+            <attr name="layout">
+                <string>669 552 32 24</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>1070 45 54 48</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>493 577 32 24</string>
+            </attr>
+        </node>
+        <node id="n26">
+            <attr name="layout">
+                <string>328 705 54 48</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>985 594 54 48</string>
+            </attr>
+        </node>
+        <node id="n51">
+            <attr name="layout">
+                <string>276 561 32 24</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>13 276 54 48</string>
+            </attr>
+        </node>
+        <node id="n9">
+            <attr name="layout">
+                <string>765 179 32 24</string>
+            </attr>
+        </node>
+        <node id="n27">
+            <attr name="layout">
+                <string>801 27 54 48</string>
+            </attr>
+        </node>
+        <node id="n37">
+            <attr name="layout">
+                <string>543 706 54 48</string>
+            </attr>
+        </node>
+        <node id="n52">
+            <attr name="layout">
+                <string>767 670 54 48</string>
+            </attr>
+        </node>
+        <node id="n34">
+            <attr name="layout">
+                <string>945 204 32 24</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>409 728 54 48</string>
+            </attr>
+        </node>
+        <node id="n48">
+            <attr name="layout">
+                <string>573 567 32 24</string>
+            </attr>
+        </node>
+        <node id="n40">
+            <attr name="layout">
+                <string>547 31 54 48</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>352 577 32 24</string>
+            </attr>
+        </node>
+        <node id="n39">
+            <attr name="layout">
+                <string>1043 194 32 24</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>852 655 54 48</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>838 518 32 24</string>
+            </attr>
+        </node>
+        <node id="n45">
+            <attr name="layout">
+                <string>138 114 54 48</string>
+            </attr>
+        </node>
+        <node id="n25">
+            <attr name="layout">
+                <string>330 42 54 48</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>245 60 54 48</string>
+            </attr>
+        </node>
+        <node id="n17">
+            <attr name="layout">
+                <string>77 149 54 48</string>
+            </attr>
+        </node>
+        <node id="n43">
+            <attr name="layout">
+                <string>79 628 54 48</string>
+            </attr>
+        </node>
+        <node id="n47">
+            <attr name="layout">
+                <string>472 15 54 48</string>
+            </attr>
+        </node>
+        <node id="n46">
+            <attr name="layout">
+                <string>30 492 54 48</string>
+            </attr>
+        </node>
+        <node id="n29">
+            <attr name="layout">
+                <string>13 349 54 48</string>
+            </attr>
+        </node>
+        <node id="n42">
+            <attr name="layout">
+                <string>20 417 54 48</string>
+            </attr>
+        </node>
+        <node id="n31">
+            <attr name="layout">
+                <string>608 16 54 48</string>
+            </attr>
+        </node>
+        <node id="n61">
+            <attr name="layout">
+                <string>1891 53 54 48</string>
+            </attr>
+        </node>
+        <node id="n65">
+            <attr name="layout">
+                <string>1347 30 54 48</string>
+            </attr>
+        </node>
+        <node id="n66">
+            <attr name="layout">
+                <string>1650 36 54 48</string>
+            </attr>
+        </node>
+        <node id="n67">
+            <attr name="layout">
+                <string>2016 57 54 48</string>
+            </attr>
+        </node>
+        <node id="n63">
+            <attr name="layout">
+                <string>1747 39 54 48</string>
+            </attr>
+        </node>
+        <node id="n68">
+            <attr name="layout">
+                <string>1493 43 54 48</string>
+            </attr>
+        </node>
+        <node id="n64">
+            <attr name="layout">
+                <string>1276 54 54 48</string>
+            </attr>
+        </node>
+        <node id="n60">
+            <attr name="layout">
+                <string>1191 72 54 48</string>
+            </attr>
+        </node>
+        <node id="n62">
+            <attr name="layout">
+                <string>1418 27 54 48</string>
+            </attr>
+        </node>
+        <node id="n69">
+            <attr name="layout">
+                <string>1573 45 54 48</string>
+            </attr>
+        </node>
+        <node id="n75">
+            <attr name="layout">
+                <string>1359 172 32 24</string>
+            </attr>
+        </node>
+        <node id="n77">
+            <attr name="layout">
+                <string>1270 182 32 24</string>
+            </attr>
+        </node>
+        <node id="n80">
+            <attr name="layout">
+                <string>1583 157 32 24</string>
+            </attr>
+        </node>
+        <node id="n74">
+            <attr name="layout">
+                <string>1794 154 32 24</string>
+            </attr>
+        </node>
+        <node id="n79">
+            <attr name="layout">
+                <string>1186 196 32 24</string>
+            </attr>
+        </node>
+        <node id="n76">
+            <attr name="layout">
+                <string>1665 151 32 24</string>
+            </attr>
+        </node>
+        <node id="n71">
+            <attr name="layout">
+                <string>1512 181 32 24</string>
+            </attr>
+        </node>
+        <node id="n78">
+            <attr name="layout">
+                <string>1973 221 32 24</string>
+            </attr>
+        </node>
+        <node id="n72">
+            <attr name="layout">
+                <string>1447 187 32 24</string>
+            </attr>
+        </node>
+        <node id="n70">
+            <attr name="layout">
+                <string>1893 177 32 24</string>
+            </attr>
+        </node>
+        <edge from="n57" to="n57">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n55" to="n55">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n54" to="n54">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n19" to="n19">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n41" to="n41">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n33" to="n33">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n49" to="n49">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n35" to="n35">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n59" to="n59">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n34">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n23">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n21">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n34">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n21">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n18">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n53" to="n53">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n20" to="n20">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n20">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n28">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n20">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n59">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n9">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n9">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n24">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n24" to="n24">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n38" to="n41">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n38" to="n38">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n38" to="n38">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n38" to="n41">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n38" to="n36">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n50" to="n50">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n36" to="n36">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n51">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n51">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n16">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n14" to="n14">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n78">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n22">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n22">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n32" to="n32">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n50">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n50">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n22">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n30" to="n30">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n30" to="n35">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n30" to="n30">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n30" to="n2">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n30" to="n35">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n58" to="n58">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n58" to="n58">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n58" to="n53">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n58" to="n53">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n58" to="n50">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n22" to="n22">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n56" to="n56">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n56" to="n44">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n56" to="n56">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n56" to="n48">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n56" to="n48">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n23" to="n23">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n28" to="n28">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n44" to="n44">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n39">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n34">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n39">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n16">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n26">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n32">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n26">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n26" to="n16">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n6">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n53">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n6">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n51" to="n51">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n54">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n36">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n36">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n9">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n27">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n27">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n23">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n27" to="n23">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n37" to="n48">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n37" to="n7">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n37" to="n7">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n37" to="n37">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n37" to="n37">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n52">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n52">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n44">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n44">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n18">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n34" to="n34">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n7">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n32">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n32">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n48" to="n48">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n40" to="n40">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n40" to="n15">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n40" to="n10">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n40" to="n40">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n39" to="n39">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n6">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n18">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n18">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n45" to="n2">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n45" to="n33">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n45" to="n45">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n45" to="n2">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n45" to="n45">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n25" to="n28">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n25" to="n25">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n25" to="n28">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n25" to="n25">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n25" to="n49">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n35">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n49">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n49">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n33">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n33">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n41">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n43">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n57">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n43">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n51">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n57">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n47" to="n47">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n47" to="n15">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n47" to="n47">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n47" to="n20">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n46" to="n55">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n46" to="n57">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n46" to="n55">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n46" to="n46">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n46" to="n46">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n29" to="n29">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n29" to="n54">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n29" to="n29">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n29" to="n54">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n29" to="n19">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n42" to="n42">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n42" to="n19">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n42" to="n42">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n42" to="n55">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n42" to="n19">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n31" to="n10">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n31" to="n31">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n31" to="n59">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n31" to="n59">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n31" to="n31">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n61" to="n74">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n61" to="n70">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n61" to="n61">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n61" to="n61">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n61" to="n70">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n65" to="n65">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n65" to="n65">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n65" to="n75">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n65" to="n77">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n65" to="n75">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n66" to="n66">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n66" to="n76">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n66" to="n80">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n66" to="n66">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n66" to="n76">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n67" to="n67">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n67" to="n78">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n67" to="n70">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n67" to="n78">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n67" to="n67">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n63" to="n76">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n63" to="n74">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n63" to="n63">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n63" to="n74">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n63" to="n63">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n68" to="n68">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n68" to="n71">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n68" to="n68">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n68" to="n72">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n68" to="n71">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n64" to="n79">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n64" to="n64">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n64" to="n77">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n64" to="n77">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n64" to="n64">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n60" to="n79">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n60" to="n79">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n60" to="n39">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n60" to="n60">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n60" to="n60">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n62" to="n72">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n62" to="n62">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n62" to="n75">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n62" to="n72">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n62" to="n62">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n69" to="n69">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n69" to="n71">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n69" to="n80">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n69" to="n80">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n69" to="n69">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n75" to="n75">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n77" to="n77">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n80" to="n80">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n74" to="n74">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n79" to="n79">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n76" to="n76">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n71" to="n71">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n78" to="n78">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n72" to="n72">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n70" to="n70">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

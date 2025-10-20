@@ -1,0 +1,675 @@
+"""
+100 Philosophers Problem - Deadlock Detection using Salimi et al. (2020) Methodology
+Fuzzy Genetic Algorithm for Deadlock Detection in Dining Philosophers Problem
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import networkx as nx
+import time
+import random
+from typing import List, Dict, Tuple, Set, Optional
+from dataclasses import dataclass
+from enum import Enum
+import threading
+import queue
+from collections import defaultdict
+
+# Import our custom modules
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'salimi'))
+
+from fuzzy_genetic_algorithm import FuzzyGeneticAlgorithm, FuzzyRule, FuzzySet, Individual, create_default_fuzzy_rules
+from deadlock_detection import DeadlockDetector, Process, Resource
+
+
+class PhilosopherState(Enum):
+    """States of philosophers"""
+    THINKING = "thinking"
+    HUNGRY = "hungry"
+    EATING = "eating"
+    WAITING = "waiting"
+
+
+@dataclass
+class Philosopher:
+    """Represents a philosopher in the dining philosophers problem"""
+    id: int
+    state: PhilosopherState = PhilosopherState.THINKING
+    left_fork: Optional[int] = None
+    right_fork: Optional[int] = None
+    eating_time: float = 0.0
+    thinking_time: float = 0.0
+    waiting_time: float = 0.0
+    deadlock_count: int = 0
+    
+    def __post_init__(self):
+        self.left_fork = self.id
+        self.right_fork = (self.id + 1) % 100  # Circular arrangement
+
+
+@dataclass
+class Fork:
+    """Represents a fork in the dining philosophers problem"""
+    id: int
+    owner: Optional[int] = None
+    is_available: bool = True
+    usage_count: int = 0
+    wait_time: float = 0.0
+
+
+class DiningPhilosophersSystem:
+    """
+    Dining Philosophers Problem Implementation
+    Based on the classic problem with 100 philosophers
+    """
+    
+    def __init__(self, num_philosophers: int = 100):
+        self.num_philosophers = num_philosophers
+        self.philosophers: Dict[int, Philosopher] = {}
+        self.forks: Dict[int, Fork] = {}
+        self.deadlock_detector = DeadlockDetector()
+        self.system_state_history: List[Dict] = []
+        self.deadlock_events: List[Tuple[float, List[int]]] = []
+        
+        # Initialize philosophers and forks
+        self._initialize_system()
+        
+        # Performance metrics
+        self.total_eating_time = 0.0
+        self.total_deadlock_time = 0.0
+        self.deadlock_resolution_count = 0
+        
+    def _initialize_system(self):
+        """Initialize philosophers and forks"""
+        # Create philosophers
+        for i in range(self.num_philosophers):
+            philosopher = Philosopher(i)
+            self.philosophers[i] = philosopher
+            
+            # Add to deadlock detector as processes
+            process = Process(f"Philosopher_{i}")
+            self.deadlock_detector.add_process(process)
+        
+        # Create forks
+        for i in range(self.num_philosophers):
+            fork = Fork(i)
+            self.forks[i] = fork
+            
+            # Add to deadlock detector as resources
+            resource = Resource(f"Fork_{i}", capacity=1)
+            self.deadlock_detector.add_resource(resource)
+    
+    def try_eat(self, philosopher_id: int) -> bool:
+        """
+        Attempt to make a philosopher eat (acquire both forks)
+        Returns True if successful, False if blocked
+        """
+        philosopher = self.philosophers[philosopher_id]
+        left_fork_id = philosopher.left_fork
+        right_fork_id = philosopher.right_fork
+        
+        # Check if both forks are available
+        left_fork = self.forks[left_fork_id]
+        right_fork = self.forks[right_fork_id]
+        
+        if left_fork.is_available and right_fork.is_available:
+            # Acquire both forks
+            philosopher.state = PhilosopherState.EATING
+            left_fork.owner = philosopher_id
+            left_fork.is_available = False
+            right_fork.owner = philosopher_id
+            right_fork.is_available = False
+            
+            # Update deadlock detector
+            self.deadlock_detector.allocate_resource(f"Philosopher_{philosopher_id}", f"Fork_{left_fork_id}")
+            self.deadlock_detector.allocate_resource(f"Philosopher_{philosopher_id}", f"Fork_{right_fork_id}")
+            
+            return True
+        else:
+            # Philosopher must wait
+            philosopher.state = PhilosopherState.WAITING
+            
+            # Update deadlock detector
+            if not left_fork.is_available:
+                self.deadlock_detector.allocate_resource(f"Philosopher_{philosopher_id}", f"Fork_{left_fork_id}")
+            if not right_fork.is_available:
+                self.deadlock_detector.allocate_resource(f"Philosopher_{philosopher_id}", f"Fork_{right_fork_id}")
+            
+            return False
+    
+    def finish_eating(self, philosopher_id: int):
+        """Make a philosopher finish eating (release both forks)"""
+        philosopher = self.philosophers[philosopher_id]
+        left_fork_id = philosopher.left_fork
+        right_fork_id = philosopher.right_fork
+        
+        # Release both forks
+        philosopher.state = PhilosopherState.THINKING
+        self.forks[left_fork_id].owner = None
+        self.forks[left_fork_id].is_available = True
+        self.forks[left_fork_id].usage_count += 1
+        
+        self.forks[right_fork_id].owner = None
+        self.forks[right_fork_id].is_available = True
+        self.forks[right_fork_id].usage_count += 1
+        
+        # Update deadlock detector
+        self.deadlock_detector.release_resource(f"Philosopher_{philosopher_id}", f"Fork_{left_fork_id}")
+        self.deadlock_detector.release_resource(f"Philosopher_{philosopher_id}", f"Fork_{right_fork_id}")
+    
+    def detect_deadlock_fuzzy(self) -> Tuple[bool, List[int], float]:
+        """
+        Detect deadlock using fuzzy genetic algorithm approach
+        """
+        # Use our fuzzy deadlock detector
+        is_deadlock, deadlocked_processes, confidence = self.deadlock_detector.detect_deadlock_fuzzy_approach()
+        
+        # Convert process names back to philosopher IDs
+        deadlocked_philosophers = []
+        for process_name in deadlocked_processes:
+            if process_name.startswith("Philosopher_"):
+                philosopher_id = int(process_name.split("_")[1])
+                deadlocked_philosophers.append(philosopher_id)
+        
+        return is_deadlock, deadlocked_philosophers, confidence
+    
+    def detect_deadlock_cycle(self) -> Tuple[bool, List[int]]:
+        """
+        Detect deadlock using cycle detection
+        """
+        is_deadlock, deadlocked_processes = self.deadlock_detector.detect_deadlock_cycle_detection()
+        
+        # Convert process names back to philosopher IDs
+        deadlocked_philosophers = []
+        for process_name in deadlocked_processes:
+            if process_name.startswith("Philosopher_"):
+                philosopher_id = int(process_name.split("_")[1])
+                deadlocked_philosophers.append(philosopher_id)
+        
+        return is_deadlock, deadlocked_philosophers
+    
+    def resolve_deadlock(self, deadlocked_philosophers: List[int], strategy: str = "preempt") -> bool:
+        """
+        Resolve deadlock using various strategies
+        """
+        if strategy == "preempt":
+            # Preempt one philosopher's fork
+            if deadlocked_philosophers:
+                philosopher_id = deadlocked_philosophers[0]
+                philosopher = self.philosophers[philosopher_id]
+                
+                # Force release one fork
+                left_fork_id = philosopher.left_fork
+                self.forks[left_fork_id].owner = None
+                self.forks[left_fork_id].is_available = True
+                
+                philosopher.state = PhilosopherState.THINKING
+                
+                # Update deadlock detector
+                self.deadlock_detector.release_resource(f"Philosopher_{philosopher_id}", f"Fork_{left_fork_id}")
+                
+                self.deadlock_resolution_count += 1
+                return True
+        
+        elif strategy == "terminate":
+            # Terminate one philosopher
+            if deadlocked_philosophers:
+                philosopher_id = deadlocked_philosophers[0]
+                philosopher = self.philosophers[philosopher_id]
+                
+                # Release both forks
+                self.finish_eating(philosopher_id)
+                philosopher.state = PhilosopherState.THINKING
+                
+                self.deadlock_resolution_count += 1
+                return True
+        
+        return False
+    
+    def simulate_step(self, time_step: float = 0.1):
+        """
+        Simulate one step of the dining philosophers problem
+        """
+        # Randomly select philosophers to try eating
+        philosophers_to_try = random.sample(list(self.philosophers.keys()), 
+                                         min(10, self.num_philosophers))
+        
+        for philosopher_id in philosophers_to_try:
+            philosopher = self.philosophers[philosopher_id]
+            
+            if philosopher.state == PhilosopherState.THINKING:
+                # Randomly decide to get hungry
+                if random.random() < 0.1:  # 10% chance to get hungry
+                    philosopher.state = PhilosopherState.HUNGRY
+            
+            elif philosopher.state == PhilosopherState.HUNGRY:
+                # Try to eat
+                success = self.try_eat(philosopher_id)
+                if not success:
+                    philosopher.waiting_time += time_step
+            
+            elif philosopher.state == PhilosopherState.EATING:
+                # Randomly finish eating
+                if random.random() < 0.2:  # 20% chance to finish eating
+                    self.finish_eating(philosopher_id)
+                    philosopher.eating_time += time_step
+                    self.total_eating_time += time_step
+            
+            elif philosopher.state == PhilosopherState.WAITING:
+                philosopher.waiting_time += time_step
+        
+        # Check for deadlock
+        is_deadlock, deadlocked_philosophers, confidence = self.detect_deadlock_fuzzy()
+        
+        if is_deadlock and confidence > 0.7:
+            self.deadlock_events.append((time.time(), deadlocked_philosophers))
+            self.total_deadlock_time += time_step
+            
+            # Resolve deadlock
+            self.resolve_deadlock(deadlocked_philosophers, strategy="preempt")
+            
+            # Update deadlock count for affected philosophers
+            for philosopher_id in deadlocked_philosophers:
+                self.philosophers[philosopher_id].deadlock_count += 1
+        
+        # Record system state
+        self._record_system_state()
+    
+    def _record_system_state(self):
+        """Record current system state"""
+        state = {
+            'timestamp': time.time(),
+            'eating_count': len([p for p in self.philosophers.values() if p.state == PhilosopherState.EATING]),
+            'hungry_count': len([p for p in self.philosophers.values() if p.state == PhilosopherState.HUNGRY]),
+            'waiting_count': len([p for p in self.philosophers.values() if p.state == PhilosopherState.WAITING]),
+            'thinking_count': len([p for p in self.philosophers.values() if p.state == PhilosopherState.THINKING]),
+            'available_forks': len([f for f in self.forks.values() if f.is_available])
+        }
+        self.system_state_history.append(state)
+    
+    def run_simulation(self, duration: float = 60.0, time_step: float = 0.1):
+        """
+        Run the dining philosophers simulation
+        """
+        print(f"Starting simulation for {duration} seconds...")
+        start_time = time.time()
+        
+        while time.time() - start_time < duration:
+            self.simulate_step(time_step)
+            time.sleep(time_step * 0.01)  # Scale down for demonstration
+        
+        print(f"Simulation completed!")
+        self._print_statistics()
+    
+    def _print_statistics(self):
+        """Print simulation statistics"""
+        print(f"\nSimulation Statistics:")
+        print(f"  Total philosophers: {self.num_philosophers}")
+        print(f"  Total eating time: {self.total_eating_time:.2f}s")
+        print(f"  Total deadlock time: {self.total_deadlock_time:.2f}s")
+        print(f"  Deadlock resolution count: {self.deadlock_resolution_count}")
+        print(f"  Deadlock events: {len(self.deadlock_events)}")
+        
+        # Philosopher statistics
+        avg_eating_time = np.mean([p.eating_time for p in self.philosophers.values()])
+        avg_waiting_time = np.mean([p.waiting_time for p in self.philosophers.values()])
+        avg_deadlock_count = np.mean([p.deadlock_count for p in self.philosophers.values()])
+        
+        print(f"  Average eating time per philosopher: {avg_eating_time:.2f}s")
+        print(f"  Average waiting time per philosopher: {avg_waiting_time:.2f}s")
+        print(f"  Average deadlock count per philosopher: {avg_deadlock_count:.2f}")
+
+
+class PhilosophersFuzzyGA:
+    """
+    Fuzzy Genetic Algorithm specifically designed for the Dining Philosophers Problem
+    """
+    
+    def __init__(self, num_philosophers: int = 100):
+        self.num_philosophers = num_philosophers
+        self.fga = FuzzyGeneticAlgorithm(
+            population_size=50,
+            chromosome_length=num_philosophers,
+            max_generations=100,
+            fuzzy_rules=self._create_philosophers_fuzzy_rules()
+        )
+        
+    def _create_philosophers_fuzzy_rules(self) -> List[FuzzyRule]:
+        """Create fuzzy rules specific to the dining philosophers problem"""
+        rules = []
+        
+        # Rule 1: High deadlock probability when many philosophers are waiting
+        rule1 = FuzzyRule(
+            antecedents=[FuzzySet(0.7, 0.9, 1.0)],  # High waiting ratio
+            consequent=FuzzySet(0.8, 0.9, 1.0)      # High deadlock probability
+        )
+        
+        # Rule 2: Medium deadlock probability for balanced states
+        rule2 = FuzzyRule(
+            antecedents=[FuzzySet(0.3, 0.5, 0.7)],  # Medium activity
+            consequent=FuzzySet(0.4, 0.6, 0.8)      # Medium deadlock probability
+        )
+        
+        # Rule 3: Low deadlock probability when few philosophers are active
+        rule3 = FuzzyRule(
+            antecedents=[FuzzySet(0.0, 0.2, 0.4)],  # Low activity
+            consequent=FuzzySet(0.0, 0.1, 0.3)      # Low deadlock probability
+        )
+        
+        rules.extend([rule1, rule2, rule3])
+        return rules
+    
+    def optimize_philosophers_scheduling(self, system: DiningPhilosophersSystem) -> Individual:
+        """
+        Use fuzzy GA to optimize philosopher scheduling to minimize deadlocks
+        """
+        def philosophers_fitness(individual: Individual, problem_type: str = "deadlock") -> float:
+            """Fitness function for philosopher scheduling"""
+            # Simulate the system with the given scheduling
+            deadlock_probability = 0.0
+            
+            for i, gene in enumerate(individual.chromosome):
+                # Gene represents priority/activity level for philosopher i
+                if i < len(system.philosophers):
+                    philosopher = system.philosophers[i]
+                    
+                    # Calculate deadlock contribution based on gene value
+                    if gene > 0.7:  # High activity
+                        deadlock_probability += 0.3
+                    elif gene > 0.4:  # Medium activity
+                        deadlock_probability += 0.1
+                    else:  # Low activity
+                        deadlock_probability += 0.05
+            
+            # Normalize deadlock probability
+            deadlock_probability = min(1.0, deadlock_probability / self.num_philosophers)
+            
+            # Fitness is inverse of deadlock probability (we want to minimize deadlocks)
+            fitness = 1.0 - deadlock_probability
+            
+            return fitness
+        
+        # Override the fitness function
+        self.fga.evaluate_fitness = philosophers_fitness
+        
+        # Run evolution
+        best_individual = self.fga.evolve(problem_type="deadlock")
+        
+        return best_individual
+    
+    def analyze_deadlock_patterns(self, system: DiningPhilosophersSystem) -> Dict:
+        """
+        Analyze deadlock patterns using fuzzy GA
+        """
+        # Run optimization
+        best_individual = self.optimize_philosophers_scheduling(system)
+        
+        # Analyze the results
+        analysis = {
+            'best_fitness': best_individual.fitness,
+            'deadlock_reduction': 1.0 - best_individual.fitness,
+            'philosopher_priorities': best_individual.chromosome,
+            'high_risk_philosophers': [],
+            'low_risk_philosophers': []
+        }
+        
+        # Identify high and low risk philosophers
+        for i, priority in enumerate(best_individual.chromosome):
+            if priority > 0.7:
+                analysis['high_risk_philosophers'].append(i)
+            elif priority < 0.3:
+                analysis['low_risk_philosophers'].append(i)
+        
+        return analysis
+
+
+class PhilosophersVisualizer:
+    """
+    Visualization tools for the Dining Philosophers Problem
+    """
+    
+    def __init__(self, system: DiningPhilosophersSystem):
+        self.system = system
+    
+    def plot_philosophers_state_distribution(self, save_path: str = None):
+        """Plot the distribution of philosopher states over time"""
+        if not self.system.system_state_history:
+            print("No system state history available")
+            return
+        
+        # Extract data
+        timestamps = [state['timestamp'] for state in self.system.system_state_history]
+        eating_counts = [state['eating_count'] for state in self.system.system_state_history]
+        hungry_counts = [state['hungry_count'] for state in self.system.system_state_history]
+        waiting_counts = [state['waiting_count'] for state in self.system.system_state_history]
+        thinking_counts = [state['thinking_count'] for state in self.system.system_state_history]
+        
+        # Normalize timestamps
+        start_time = timestamps[0]
+        timestamps = [(t - start_time) for t in timestamps]
+        
+        plt.figure(figsize=(12, 8))
+        
+        plt.subplot(2, 2, 1)
+        plt.plot(timestamps, eating_counts, label='Eating', color='green')
+        plt.title('Philosophers Eating Over Time')
+        plt.xlabel('Time (s)')
+        plt.ylabel('Count')
+        plt.grid(True, alpha=0.3)
+        
+        plt.subplot(2, 2, 2)
+        plt.plot(timestamps, hungry_counts, label='Hungry', color='orange')
+        plt.title('Philosophers Hungry Over Time')
+        plt.xlabel('Time (s)')
+        plt.ylabel('Count')
+        plt.grid(True, alpha=0.3)
+        
+        plt.subplot(2, 2, 3)
+        plt.plot(timestamps, waiting_counts, label='Waiting', color='red')
+        plt.title('Philosophers Waiting Over Time')
+        plt.xlabel('Time (s)')
+        plt.ylabel('Count')
+        plt.grid(True, alpha=0.3)
+        
+        plt.subplot(2, 2, 4)
+        plt.plot(timestamps, thinking_counts, label='Thinking', color='blue')
+        plt.title('Philosophers Thinking Over Time')
+        plt.xlabel('Time (s)')
+        plt.ylabel('Count')
+        plt.grid(True, alpha=0.3)
+        
+        plt.tight_layout()
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        plt.show()
+    
+    def plot_deadlock_events(self, save_path: str = None):
+        """Plot deadlock events over time"""
+        if not self.system.deadlock_events:
+            print("No deadlock events recorded")
+            return
+        
+        timestamps = [event[0] for event in self.system.deadlock_events]
+        deadlock_counts = [len(event[1]) for event in self.system.deadlock_events]
+        
+        # Normalize timestamps
+        start_time = timestamps[0]
+        timestamps = [(t - start_time) for t in timestamps]
+        
+        plt.figure(figsize=(10, 6))
+        plt.scatter(timestamps, deadlock_counts, color='red', alpha=0.7)
+        plt.title('Deadlock Events Over Time')
+        plt.xlabel('Time (s)')
+        plt.ylabel('Number of Deadlocked Philosophers')
+        plt.grid(True, alpha=0.3)
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        plt.show()
+    
+    def plot_philosophers_circular_arrangement(self, save_path: str = None):
+        """Plot philosophers in circular arrangement"""
+        plt.figure(figsize=(10, 10))
+        
+        # Create circular positions
+        angles = np.linspace(0, 2*np.pi, self.system.num_philosophers, endpoint=False)
+        radius = 5
+        
+        x_positions = radius * np.cos(angles)
+        y_positions = radius * np.sin(angles)
+        
+        # Color code by state
+        colors = []
+        for philosopher in self.system.philosophers.values():
+            if philosopher.state == PhilosopherState.EATING:
+                colors.append('green')
+            elif philosopher.state == PhilosopherState.HUNGRY:
+                colors.append('orange')
+            elif philosopher.state == PhilosopherState.WAITING:
+                colors.append('red')
+            else:  # THINKING
+                colors.append('blue')
+        
+        # Plot philosophers
+        plt.scatter(x_positions, y_positions, c=colors, s=100, alpha=0.7)
+        
+        # Plot forks
+        fork_angles = np.linspace(0, 2*np.pi, self.system.num_philosophers, endpoint=False)
+        fork_radius = radius + 0.5
+        fork_x = fork_radius * np.cos(fork_angles)
+        fork_y = fork_radius * np.sin(fork_angles)
+        
+        plt.scatter(fork_x, fork_y, c='black', s=50, marker='s', alpha=0.5)
+        
+        # Add labels
+        for i, (x, y) in enumerate(zip(x_positions, y_positions)):
+            plt.annotate(f'P{i}', (x, y), ha='center', va='center', fontsize=8)
+        
+        plt.title('Dining Philosophers Circular Arrangement')
+        plt.axis('equal')
+        plt.grid(True, alpha=0.3)
+        
+        # Add legend
+        legend_elements = [
+            plt.scatter([], [], c='green', s=100, label='Eating'),
+            plt.scatter([], [], c='orange', s=100, label='Hungry'),
+            plt.scatter([], [], c='red', s=100, label='Waiting'),
+            plt.scatter([], [], c='blue', s=100, label='Thinking'),
+            plt.scatter([], [], c='black', s=50, marker='s', label='Forks')
+        ]
+        plt.legend(handles=legend_elements, loc='upper right')
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        plt.show()
+    
+    def plot_fuzzy_ga_convergence(self, fga: FuzzyGeneticAlgorithm, save_path: str = None):
+        """Plot fuzzy GA convergence"""
+        if not fga.fitness_history:
+            print("No fitness history available")
+            return
+        
+        plt.figure(figsize=(10, 6))
+        plt.plot(fga.fitness_history)
+        plt.title('Fuzzy GA Convergence for Philosophers Problem')
+        plt.xlabel('Generation')
+        plt.ylabel('Average Fitness')
+        plt.grid(True, alpha=0.3)
+        
+        if save_path:
+            plt.savefig(save_path, dpi=300, bbox_inches='tight')
+        plt.show()
+
+
+def run_philosophers_experiment():
+    """
+    Run complete experiment for the 100 philosophers problem
+    """
+    print("=" * 80)
+    print("100 PHILOSOPHERS PROBLEM - DEADLOCK DETECTION EXPERIMENT")
+    print("Using Salimi et al. (2020) Fuzzy Genetic Algorithm Methodology")
+    print("=" * 80)
+    
+    # Create dining philosophers system
+    print("Creating dining philosophers system...")
+    system = DiningPhilosophersSystem(num_philosophers=100)
+    
+    # Create fuzzy GA for optimization
+    print("Initializing fuzzy genetic algorithm...")
+    philosophers_fga = PhilosophersFuzzyGA(num_philosophers=100)
+    
+    # Run simulation
+    print("Running simulation...")
+    system.run_simulation(duration=30.0, time_step=0.1)
+    
+    # Analyze deadlock patterns
+    print("Analyzing deadlock patterns with fuzzy GA...")
+    analysis = philosophers_fga.analyze_deadlock_patterns(system)
+    
+    print(f"\nFuzzy GA Analysis Results:")
+    print(f"  Best fitness: {analysis['best_fitness']:.4f}")
+    print(f"  Deadlock reduction: {analysis['deadlock_reduction']:.4f}")
+    print(f"  High risk philosophers: {len(analysis['high_risk_philosophers'])}")
+    print(f"  Low risk philosophers: {len(analysis['low_risk_philosophers'])}")
+    
+    # Create visualizations
+    print("Creating visualizations...")
+    visualizer = PhilosophersVisualizer(system)
+    
+    try:
+        visualizer.plot_philosophers_state_distribution("100phill_state_distribution.png")
+        visualizer.plot_deadlock_events("100phill_deadlock_events.png")
+        visualizer.plot_philosophers_circular_arrangement("100phill_circular_arrangement.png")
+        visualizer.plot_fuzzy_ga_convergence(philosophers_fga.fga, "100phill_ga_convergence.png")
+        print("Visualizations saved!")
+    except Exception as e:
+        print(f"Error creating visualizations: {e}")
+    
+    # Test different deadlock detection methods
+    print("\nTesting different deadlock detection methods...")
+    
+    # Fuzzy approach
+    is_deadlock_fuzzy, philosophers_fuzzy, confidence = system.detect_deadlock_fuzzy()
+    print(f"Fuzzy approach: Deadlock={is_deadlock_fuzzy}, Confidence={confidence:.4f}")
+    
+    # Cycle detection
+    is_deadlock_cycle, philosophers_cycle = system.detect_deadlock_cycle()
+    print(f"Cycle detection: Deadlock={is_deadlock_cycle}")
+    
+    # Compare methods
+    print(f"\nMethod comparison:")
+    print(f"  Fuzzy GA detected: {len(philosophers_fuzzy)} deadlocked philosophers")
+    print(f"  Cycle detection found: {len(philosophers_cycle)} deadlocked philosophers")
+    
+    return system, philosophers_fga, analysis
+
+
+def main():
+    """
+    Main function to run the 100 philosophers experiment
+    """
+    try:
+        system, fga, analysis = run_philosophers_experiment()
+        
+        print("\n" + "=" * 80)
+        print("EXPERIMENT COMPLETED SUCCESSFULLY!")
+        print("=" * 80)
+        
+        print(f"\nFinal Results:")
+        print(f"  Total philosophers: {system.num_philosophers}")
+        print(f"  Deadlock events: {len(system.deadlock_events)}")
+        print(f"  Deadlock resolutions: {system.deadlock_resolution_count}")
+        print(f"  Fuzzy GA best fitness: {analysis['best_fitness']:.4f}")
+        print(f"  Deadlock reduction achieved: {analysis['deadlock_reduction']:.4f}")
+        
+    except Exception as e:
+        print(f"Error during experiment: {e}")
+        import traceback
+        traceback.print_exc()
+
+
+if __name__ == "__main__":
+    main()

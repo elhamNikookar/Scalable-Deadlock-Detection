@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="reach_3">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n2">
+            <attr name="layout">
+                <string>231 19 54 48</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>253 176 32 24</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>203 184 32 24</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>49 217 54 48</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>371 267 54 48</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>226 239 32 24</string>
+            </attr>
+        </node>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n1">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+            <attr name="layout">
+                <string>531 4 258 43 219 196 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n1">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n1">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n4">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n0">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+            <attr name="layout">
+                <string>377 -4 398 291 242 251 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+            <attr name="layout">
+                <string>377 -4 398 291 242 251 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

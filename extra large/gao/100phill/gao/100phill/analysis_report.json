@@ -1,0 +1,4912 @@
+{
+  "timestamp": 1760029599.3710778,
+  "system_info": {
+    "total_philosophers": 100,
+    "total_operations": 0,
+    "simulation_duration": 30.0
+  },
+  "deadlock_analysis": {
+    "total_deadlocks": 0,
+    "deadlock_frequency": 0.0,
+    "common_patterns": [
+      [
+        "unknown_0",
+        422
+      ]
+    ],
+    "risk_factors": [],
+    "resolution_success_rate": 0.0
+  },
+  "performance_metrics": {
+    "detection_accuracy": 0.93,
+    "false_positive_rate": 0.022988505747126436,
+    "false_negative_rate": 0.38461538461538464,
+    "average_detection_time": 0.10864114761352539,
+    "throughput": 0.0
+  },
+  "recommendations": [
+    "High communication complexity. Consider simplifying communication patterns."
+  ],
+  "raw_data": {
+    "num_philosophers": 100,
+    "simulation_duration": 30.0,
+    "deadlock_events": [],
+    "communication_patterns": [
+      {
+        "timestamp": 1760029566.7664356,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_broadcast_1760029566766",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          51,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029566.769321,
+        "philosopher_id": 42,
+        "operation_id": "phil_42_broadcast_1760029566769",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          43,
+          41
+        ]
+      },
+      {
+        "timestamp": 1760029566.7722409,
+        "philosopher_id": 29,
+        "operation_id": "phil_29_send_1760029566772",
+        "operation_type": "send",
+        "target_philosophers": [
+          28,
+          30
+        ]
+      },
+      {
+        "timestamp": 1760029566.7753453,
+        "philosopher_id": 24,
+        "operation_id": "phil_24_recv_1760029566775",
+        "operation_type": "recv",
+        "target_philosophers": [
+          25,
+          23
+        ]
+      },
+      {
+        "timestamp": 1760029566.77867,
+        "philosopher_id": 32,
+        "operation_id": "phil_32_recv_1760029566778",
+        "operation_type": "recv",
+        "target_philosophers": [
+          31,
+          33
+        ]
+      },
+      {
+        "timestamp": 1760029566.77867,
+        "philosopher_id": 2,
+        "operation_id": "phil_2_recv_1760029566778",
+        "operation_type": "recv",
+        "target_philosophers": [
+          1,
+          3
+        ]
+      },
+      {
+        "timestamp": 1760029566.789723,
+        "philosopher_id": 39,
+        "operation_id": "phil_39_broadcast_1760029566789",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          40,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029566.789723,
+        "philosopher_id": 46,
+        "operation_id": "phil_46_recv_1760029566789",
+        "operation_type": "recv",
+        "target_philosophers": [
+          45,
+          47
+        ]
+      },
+      {
+        "timestamp": 1760029566.797693,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_send_1760029566797",
+        "operation_type": "send",
+        "target_philosophers": [
+          7,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029566.8022416,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_recv_1760029566802",
+        "operation_type": "recv",
+        "target_philosophers": [
+          44,
+          42
+        ]
+      },
+      {
+        "timestamp": 1760029566.8069534,
+        "philosopher_id": 36,
+        "operation_id": "phil_36_send_1760029566806",
+        "operation_type": "send",
+        "target_philosophers": [
+          35,
+          37
+        ]
+      },
+      {
+        "timestamp": 1760029566.8116653,
+        "philosopher_id": 76,
+        "operation_id": "phil_76_send_1760029566811",
+        "operation_type": "send",
+        "target_philosophers": [
+          75,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029566.8116653,
+        "philosopher_id": 32,
+        "operation_id": "phil_32_recv_1760029566811",
+        "operation_type": "recv",
+        "target_philosophers": [
+          31,
+          33
+        ]
+      },
+      {
+        "timestamp": 1760029566.8166678,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_send_1760029566816",
+        "operation_type": "send",
+        "target_philosophers": [
+          67,
+          69
+        ]
+      },
+      {
+        "timestamp": 1760029566.8166678,
+        "philosopher_id": 87,
+        "operation_id": "phil_87_recv_1760029566816",
+        "operation_type": "recv",
+        "target_philosophers": [
+          88,
+          86
+        ]
+      },
+      {
+        "timestamp": 1760029566.8166678,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_send_1760029566816",
+        "operation_type": "send",
+        "target_philosophers": [
+          71,
+          73
+        ]
+      },
+      {
+        "timestamp": 1760029566.8256059,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_send_1760029566825",
+        "operation_type": "send",
+        "target_philosophers": [
+          67,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029566.8256059,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_recv_1760029566825",
+        "operation_type": "recv",
+        "target_philosophers": [
+          56,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029566.8304846,
+        "philosopher_id": 0,
+        "operation_id": "phil_0_recv_1760029566830",
+        "operation_type": "recv",
+        "target_philosophers": [
+          99,
+          1
+        ]
+      },
+      {
+        "timestamp": 1760029566.8408768,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_recv_1760029566840",
+        "operation_type": "recv",
+        "target_philosophers": [
+          29,
+          27
+        ]
+      },
+      {
+        "timestamp": 1760029566.85258,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_send_1760029566852",
+        "operation_type": "send",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029566.8577902,
+        "philosopher_id": 15,
+        "operation_id": "phil_15_recv_1760029566857",
+        "operation_type": "recv",
+        "target_philosophers": [
+          16,
+          14
+        ]
+      },
+      {
+        "timestamp": 1760029566.8632293,
+        "philosopher_id": 27,
+        "operation_id": "phil_27_recv_1760029566863",
+        "operation_type": "recv",
+        "target_philosophers": [
+          28,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029566.8632293,
+        "philosopher_id": 62,
+        "operation_id": "phil_62_broadcast_1760029566863",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          63,
+          61
+        ]
+      },
+      {
+        "timestamp": 1760029566.869105,
+        "philosopher_id": 41,
+        "operation_id": "phil_41_broadcast_1760029566869",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          42,
+          40
+        ]
+      },
+      {
+        "timestamp": 1760029566.8750398,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_recv_1760029566875",
+        "operation_type": "recv",
+        "target_philosophers": [
+          9,
+          7
+        ]
+      },
+      {
+        "timestamp": 1760029566.8750398,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_recv_1760029566875",
+        "operation_type": "recv",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029566.8819315,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_send_1760029566881",
+        "operation_type": "send",
+        "target_philosophers": [
+          69,
+          67
+        ]
+      },
+      {
+        "timestamp": 1760029566.8878825,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_send_1760029566887",
+        "operation_type": "send",
+        "target_philosophers": [
+          51,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029566.8944423,
+        "philosopher_id": 6,
+        "operation_id": "phil_6_recv_1760029566894",
+        "operation_type": "recv",
+        "target_philosophers": [
+          7,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029566.8944423,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_send_1760029566894",
+        "operation_type": "send",
+        "target_philosophers": [
+          69,
+          67
+        ]
+      },
+      {
+        "timestamp": 1760029566.8944423,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_send_1760029566894",
+        "operation_type": "send",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029566.9007354,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_send_1760029566900",
+        "operation_type": "send",
+        "target_philosophers": [
+          53,
+          51
+        ]
+      },
+      {
+        "timestamp": 1760029566.9206116,
+        "philosopher_id": 3,
+        "operation_id": "phil_3_broadcast_1760029566920",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          2,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029566.9410193,
+        "philosopher_id": 91,
+        "operation_id": "phil_91_broadcast_1760029566941",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          92,
+          90
+        ]
+      },
+      {
+        "timestamp": 1760029566.9410193,
+        "philosopher_id": 59,
+        "operation_id": "phil_59_recv_1760029566941",
+        "operation_type": "recv",
+        "target_philosophers": [
+          58,
+          60
+        ]
+      },
+      {
+        "timestamp": 1760029566.9636934,
+        "philosopher_id": 97,
+        "operation_id": "phil_97_recv_1760029566963",
+        "operation_type": "recv",
+        "target_philosophers": [
+          98,
+          96
+        ]
+      },
+      {
+        "timestamp": 1760029566.9787881,
+        "philosopher_id": 1,
+        "operation_id": "phil_1_recv_1760029566978",
+        "operation_type": "recv",
+        "target_philosophers": [
+          0,
+          2
+        ]
+      },
+      {
+        "timestamp": 1760029566.9866312,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_recv_1760029566986",
+        "operation_type": "recv",
+        "target_philosophers": [
+          67,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029566.9866312,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_send_1760029566986",
+        "operation_type": "send",
+        "target_philosophers": [
+          9,
+          11
+        ]
+      },
+      {
+        "timestamp": 1760029566.9866312,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_recv_1760029566986",
+        "operation_type": "recv",
+        "target_philosophers": [
+          24,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029567.0512621,
+        "philosopher_id": 31,
+        "operation_id": "phil_31_send_1760029567051",
+        "operation_type": "send",
+        "target_philosophers": [
+          30,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029567.0596356,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_broadcast_1760029567059",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          78,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029567.0689166,
+        "philosopher_id": 0,
+        "operation_id": "phil_0_send_1760029567068",
+        "operation_type": "send",
+        "target_philosophers": [
+          1,
+          99
+        ]
+      },
+      {
+        "timestamp": 1760029567.0689166,
+        "philosopher_id": 82,
+        "operation_id": "phil_82_broadcast_1760029567068",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          83,
+          81
+        ]
+      },
+      {
+        "timestamp": 1760029567.0864875,
+        "philosopher_id": 62,
+        "operation_id": "phil_62_send_1760029567086",
+        "operation_type": "send",
+        "target_philosophers": [
+          61,
+          63
+        ]
+      },
+      {
+        "timestamp": 1760029567.095571,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_send_1760029567095",
+        "operation_type": "send",
+        "target_philosophers": [
+          5,
+          3
+        ]
+      },
+      {
+        "timestamp": 1760029567.1245193,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_send_1760029567124",
+        "operation_type": "send",
+        "target_philosophers": [
+          65,
+          67
+        ]
+      },
+      {
+        "timestamp": 1760029567.1245193,
+        "philosopher_id": 38,
+        "operation_id": "phil_38_broadcast_1760029567124",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          39,
+          37
+        ]
+      },
+      {
+        "timestamp": 1760029567.134442,
+        "philosopher_id": 13,
+        "operation_id": "phil_13_broadcast_1760029567134",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          14,
+          12
+        ]
+      },
+      {
+        "timestamp": 1760029567.1650126,
+        "philosopher_id": 44,
+        "operation_id": "phil_44_recv_1760029567165",
+        "operation_type": "recv",
+        "target_philosophers": [
+          45,
+          43
+        ]
+      },
+      {
+        "timestamp": 1760029567.1753857,
+        "philosopher_id": 29,
+        "operation_id": "phil_29_send_1760029567175",
+        "operation_type": "send",
+        "target_philosophers": [
+          28,
+          30
+        ]
+      },
+      {
+        "timestamp": 1760029567.196758,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_broadcast_1760029567196",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029567.196758,
+        "philosopher_id": 18,
+        "operation_id": "phil_18_recv_1760029567196",
+        "operation_type": "recv",
+        "target_philosophers": [
+          19,
+          17
+        ]
+      },
+      {
+        "timestamp": 1760029567.2087383,
+        "philosopher_id": 62,
+        "operation_id": "phil_62_broadcast_1760029567208",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          61,
+          63
+        ]
+      },
+      {
+        "timestamp": 1760029567.2087383,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_broadcast_1760029567208",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          64,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.219551,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_broadcast_1760029567219",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          11,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029567.219551,
+        "philosopher_id": 58,
+        "operation_id": "phil_58_recv_1760029567219",
+        "operation_type": "recv",
+        "target_philosophers": [
+          57,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029567.264446,
+        "philosopher_id": 0,
+        "operation_id": "phil_0_broadcast_1760029567264",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          99,
+          1
+        ]
+      },
+      {
+        "timestamp": 1760029567.27585,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_broadcast_1760029567275",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          5,
+          3
+        ]
+      },
+      {
+        "timestamp": 1760029567.2876854,
+        "philosopher_id": 9,
+        "operation_id": "phil_9_send_1760029567287",
+        "operation_type": "send",
+        "target_philosophers": [
+          8,
+          10
+        ]
+      },
+      {
+        "timestamp": 1760029567.2994242,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_send_1760029567299",
+        "operation_type": "send",
+        "target_philosophers": [
+          36,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029567.311597,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_send_1760029567311",
+        "operation_type": "send",
+        "target_philosophers": [
+          50,
+          48
+        ]
+      },
+      {
+        "timestamp": 1760029567.311597,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_recv_1760029567311",
+        "operation_type": "recv",
+        "target_philosophers": [
+          64,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.3238711,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_recv_1760029567323",
+        "operation_type": "recv",
+        "target_philosophers": [
+          59,
+          61
+        ]
+      },
+      {
+        "timestamp": 1760029567.3486414,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_broadcast_1760029567348",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          5,
+          3
+        ]
+      },
+      {
+        "timestamp": 1760029567.3486414,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_send_1760029567348",
+        "operation_type": "send",
+        "target_philosophers": [
+          61,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029567.3609672,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_recv_1760029567360",
+        "operation_type": "recv",
+        "target_philosophers": [
+          76,
+          78
+        ]
+      },
+      {
+        "timestamp": 1760029567.3869011,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_recv_1760029567386",
+        "operation_type": "recv",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029567.3869011,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_recv_1760029567386",
+        "operation_type": "recv",
+        "target_philosophers": [
+          98,
+          0
+        ]
+      },
+      {
+        "timestamp": 1760029567.4126387,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_broadcast_1760029567412",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          71,
+          73
+        ]
+      },
+      {
+        "timestamp": 1760029567.4126387,
+        "philosopher_id": 5,
+        "operation_id": "phil_5_recv_1760029567412",
+        "operation_type": "recv",
+        "target_philosophers": [
+          6,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029567.4407122,
+        "philosopher_id": 0,
+        "operation_id": "phil_0_broadcast_1760029567440",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          1,
+          99
+        ]
+      },
+      {
+        "timestamp": 1760029567.4407122,
+        "philosopher_id": 38,
+        "operation_id": "phil_38_send_1760029567440",
+        "operation_type": "send",
+        "target_philosophers": [
+          39,
+          37
+        ]
+      },
+      {
+        "timestamp": 1760029567.4550602,
+        "philosopher_id": 57,
+        "operation_id": "phil_57_recv_1760029567455",
+        "operation_type": "recv",
+        "target_philosophers": [
+          58,
+          56
+        ]
+      },
+      {
+        "timestamp": 1760029567.4550602,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_recv_1760029567455",
+        "operation_type": "recv",
+        "target_philosophers": [
+          26,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029567.4688265,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_recv_1760029567468",
+        "operation_type": "recv",
+        "target_philosophers": [
+          51,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029567.4688265,
+        "philosopher_id": 9,
+        "operation_id": "phil_9_recv_1760029567468",
+        "operation_type": "recv",
+        "target_philosophers": [
+          8,
+          10
+        ]
+      },
+      {
+        "timestamp": 1760029567.4831479,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_recv_1760029567483",
+        "operation_type": "recv",
+        "target_philosophers": [
+          64,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.4970326,
+        "philosopher_id": 71,
+        "operation_id": "phil_71_broadcast_1760029567497",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          70,
+          72
+        ]
+      },
+      {
+        "timestamp": 1760029567.5117123,
+        "philosopher_id": 20,
+        "operation_id": "phil_20_broadcast_1760029567511",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          21,
+          19
+        ]
+      },
+      {
+        "timestamp": 1760029567.5787315,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_recv_1760029567578",
+        "operation_type": "recv",
+        "target_philosophers": [
+          79,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029567.5931158,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_recv_1760029567593",
+        "operation_type": "recv",
+        "target_philosophers": [
+          21,
+          23
+        ]
+      },
+      {
+        "timestamp": 1760029567.6092901,
+        "philosopher_id": 34,
+        "operation_id": "phil_34_recv_1760029567609",
+        "operation_type": "recv",
+        "target_philosophers": [
+          33,
+          35
+        ]
+      },
+      {
+        "timestamp": 1760029567.6418595,
+        "philosopher_id": 19,
+        "operation_id": "phil_19_broadcast_1760029567641",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          18,
+          20
+        ]
+      },
+      {
+        "timestamp": 1760029567.6418595,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_send_1760029567641",
+        "operation_type": "send",
+        "target_philosophers": [
+          42,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029567.6573353,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_recv_1760029567657",
+        "operation_type": "recv",
+        "target_philosophers": [
+          78,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029567.674075,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_send_1760029567674",
+        "operation_type": "send",
+        "target_philosophers": [
+          77,
+          79
+        ]
+      },
+      {
+        "timestamp": 1760029567.6901007,
+        "philosopher_id": 16,
+        "operation_id": "phil_16_broadcast_1760029567690",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          17,
+          15
+        ]
+      },
+      {
+        "timestamp": 1760029567.6901007,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_send_1760029567690",
+        "operation_type": "send",
+        "target_philosophers": [
+          76,
+          78
+        ]
+      },
+      {
+        "timestamp": 1760029567.6901007,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_broadcast_1760029567690",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          9,
+          7
+        ]
+      },
+      {
+        "timestamp": 1760029567.706521,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_broadcast_1760029567706",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          22,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029567.706521,
+        "philosopher_id": 51,
+        "operation_id": "phil_51_send_1760029567706",
+        "operation_type": "send",
+        "target_philosophers": [
+          52,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029567.7410614,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_broadcast_1760029567741",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          80,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029567.7410614,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_broadcast_1760029567741",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          22,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029567.7410614,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_recv_1760029567741",
+        "operation_type": "recv",
+        "target_philosophers": [
+          64,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.7664948,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_recv_1760029567766",
+        "operation_type": "recv",
+        "target_philosophers": [
+          27,
+          29
+        ]
+      },
+      {
+        "timestamp": 1760029567.8047986,
+        "philosopher_id": 67,
+        "operation_id": "phil_67_broadcast_1760029567804",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          68,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.8047986,
+        "philosopher_id": 17,
+        "operation_id": "phil_17_send_1760029567804",
+        "operation_type": "send",
+        "target_philosophers": [
+          18,
+          16
+        ]
+      },
+      {
+        "timestamp": 1760029567.822026,
+        "philosopher_id": 18,
+        "operation_id": "phil_18_recv_1760029567822",
+        "operation_type": "recv",
+        "target_philosophers": [
+          19,
+          17
+        ]
+      },
+      {
+        "timestamp": 1760029567.838675,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_recv_1760029567838",
+        "operation_type": "recv",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029567.8554237,
+        "philosopher_id": 70,
+        "operation_id": "phil_70_send_1760029567855",
+        "operation_type": "send",
+        "target_philosophers": [
+          71,
+          69
+        ]
+      },
+      {
+        "timestamp": 1760029567.872944,
+        "philosopher_id": 54,
+        "operation_id": "phil_54_recv_1760029567872",
+        "operation_type": "recv",
+        "target_philosophers": [
+          55,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029567.872944,
+        "philosopher_id": 70,
+        "operation_id": "phil_70_recv_1760029567872",
+        "operation_type": "recv",
+        "target_philosophers": [
+          69,
+          71
+        ]
+      },
+      {
+        "timestamp": 1760029567.8918154,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_send_1760029567891",
+        "operation_type": "send",
+        "target_philosophers": [
+          73,
+          71
+        ]
+      },
+      {
+        "timestamp": 1760029567.9098794,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_broadcast_1760029567909",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          48,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029567.9098794,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_send_1760029567909",
+        "operation_type": "send",
+        "target_philosophers": [
+          36,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029567.9278288,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_broadcast_1760029567927",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          22,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029567.9278288,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_send_1760029567927",
+        "operation_type": "send",
+        "target_philosophers": [
+          56,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029567.9474638,
+        "philosopher_id": 6,
+        "operation_id": "phil_6_broadcast_1760029567947",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          5,
+          7
+        ]
+      },
+      {
+        "timestamp": 1760029567.9474638,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_recv_1760029567947",
+        "operation_type": "recv",
+        "target_philosophers": [
+          27,
+          29
+        ]
+      },
+      {
+        "timestamp": 1760029567.9474638,
+        "philosopher_id": 67,
+        "operation_id": "phil_67_recv_1760029567947",
+        "operation_type": "recv",
+        "target_philosophers": [
+          68,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029567.9683957,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_recv_1760029567968",
+        "operation_type": "recv",
+        "target_philosophers": [
+          38,
+          36
+        ]
+      },
+      {
+        "timestamp": 1760029567.9879827,
+        "philosopher_id": 59,
+        "operation_id": "phil_59_recv_1760029567987",
+        "operation_type": "recv",
+        "target_philosophers": [
+          58,
+          60
+        ]
+      },
+      {
+        "timestamp": 1760029568.0064418,
+        "philosopher_id": 20,
+        "operation_id": "phil_20_broadcast_1760029568006",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          19,
+          21
+        ]
+      },
+      {
+        "timestamp": 1760029568.0064418,
+        "philosopher_id": 3,
+        "operation_id": "phil_3_recv_1760029568006",
+        "operation_type": "recv",
+        "target_philosophers": [
+          2,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029568.065673,
+        "philosopher_id": 98,
+        "operation_id": "phil_98_send_1760029568065",
+        "operation_type": "send",
+        "target_philosophers": [
+          97,
+          99
+        ]
+      },
+      {
+        "timestamp": 1760029568.065673,
+        "philosopher_id": 95,
+        "operation_id": "phil_95_recv_1760029568065",
+        "operation_type": "recv",
+        "target_philosophers": [
+          96,
+          94
+        ]
+      },
+      {
+        "timestamp": 1760029568.065673,
+        "philosopher_id": 82,
+        "operation_id": "phil_82_recv_1760029568065",
+        "operation_type": "recv",
+        "target_philosophers": [
+          83,
+          81
+        ]
+      },
+      {
+        "timestamp": 1760029568.0852044,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_recv_1760029568085",
+        "operation_type": "recv",
+        "target_philosophers": [
+          67,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029568.0852044,
+        "philosopher_id": 45,
+        "operation_id": "phil_45_broadcast_1760029568085",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          46,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029568.104763,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_send_1760029568104",
+        "operation_type": "send",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029568.104763,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_recv_1760029568104",
+        "operation_type": "recv",
+        "target_philosophers": [
+          86,
+          84
+        ]
+      },
+      {
+        "timestamp": 1760029568.104763,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_broadcast_1760029568104",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          68,
+          70
+        ]
+      },
+      {
+        "timestamp": 1760029568.1249251,
+        "philosopher_id": 24,
+        "operation_id": "phil_24_broadcast_1760029568124",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          23,
+          25
+        ]
+      },
+      {
+        "timestamp": 1760029568.1249251,
+        "philosopher_id": 27,
+        "operation_id": "phil_27_send_1760029568124",
+        "operation_type": "send",
+        "target_philosophers": [
+          28,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029568.1457074,
+        "philosopher_id": 41,
+        "operation_id": "phil_41_recv_1760029568145",
+        "operation_type": "recv",
+        "target_philosophers": [
+          40,
+          42
+        ]
+      },
+      {
+        "timestamp": 1760029568.1457074,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_broadcast_1760029568145",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          79,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029568.1668718,
+        "philosopher_id": 5,
+        "operation_id": "phil_5_recv_1760029568166",
+        "operation_type": "recv",
+        "target_philosophers": [
+          6,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029568.230026,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_recv_1760029568230",
+        "operation_type": "recv",
+        "target_philosophers": [
+          67,
+          69
+        ]
+      },
+      {
+        "timestamp": 1760029568.2935064,
+        "philosopher_id": 84,
+        "operation_id": "phil_84_recv_1760029568293",
+        "operation_type": "recv",
+        "target_philosophers": [
+          83,
+          85
+        ]
+      },
+      {
+        "timestamp": 1760029568.4079256,
+        "philosopher_id": 46,
+        "operation_id": "phil_46_broadcast_1760029568407",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          45,
+          47
+        ]
+      },
+      {
+        "timestamp": 1760029568.4587312,
+        "philosopher_id": 89,
+        "operation_id": "phil_89_broadcast_1760029568458",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          88,
+          90
+        ]
+      },
+      {
+        "timestamp": 1760029568.4587312,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_recv_1760029568458",
+        "operation_type": "recv",
+        "target_philosophers": [
+          42,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029568.4587312,
+        "philosopher_id": 63,
+        "operation_id": "phil_63_recv_1760029568458",
+        "operation_type": "recv",
+        "target_philosophers": [
+          62,
+          64
+        ]
+      },
+      {
+        "timestamp": 1760029568.4855065,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_recv_1760029568485",
+        "operation_type": "recv",
+        "target_philosophers": [
+          82,
+          80
+        ]
+      },
+      {
+        "timestamp": 1760029568.4855065,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_broadcast_1760029568485",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          86
+        ]
+      },
+      {
+        "timestamp": 1760029568.5096328,
+        "philosopher_id": 11,
+        "operation_id": "phil_11_recv_1760029568509",
+        "operation_type": "recv",
+        "target_philosophers": [
+          10,
+          12
+        ]
+      },
+      {
+        "timestamp": 1760029568.5096328,
+        "philosopher_id": 1,
+        "operation_id": "phil_1_broadcast_1760029568509",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          0,
+          2
+        ]
+      },
+      {
+        "timestamp": 1760029568.5355244,
+        "philosopher_id": 75,
+        "operation_id": "phil_75_recv_1760029568535",
+        "operation_type": "recv",
+        "target_philosophers": [
+          74,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029568.5355244,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_send_1760029568535",
+        "operation_type": "send",
+        "target_philosophers": [
+          53,
+          51
+        ]
+      },
+      {
+        "timestamp": 1760029568.55929,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_send_1760029568559",
+        "operation_type": "send",
+        "target_philosophers": [
+          69,
+          67
+        ]
+      },
+      {
+        "timestamp": 1760029568.5857828,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_broadcast_1760029568585",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          51,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029568.6596918,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_send_1760029568659",
+        "operation_type": "send",
+        "target_philosophers": [
+          61,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029568.7157848,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_send_1760029568715",
+        "operation_type": "send",
+        "target_philosophers": [
+          42,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029568.8283262,
+        "philosopher_id": 84,
+        "operation_id": "phil_84_broadcast_1760029568828",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          83,
+          85
+        ]
+      },
+      {
+        "timestamp": 1760029568.8283262,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_recv_1760029568828",
+        "operation_type": "recv",
+        "target_philosophers": [
+          50,
+          48
+        ]
+      },
+      {
+        "timestamp": 1760029568.8556252,
+        "philosopher_id": 6,
+        "operation_id": "phil_6_send_1760029568855",
+        "operation_type": "send",
+        "target_philosophers": [
+          7,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029568.8833463,
+        "philosopher_id": 57,
+        "operation_id": "phil_57_broadcast_1760029568883",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          58,
+          56
+        ]
+      },
+      {
+        "timestamp": 1760029568.910931,
+        "philosopher_id": 63,
+        "operation_id": "phil_63_broadcast_1760029568910",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          64,
+          62
+        ]
+      },
+      {
+        "timestamp": 1760029568.9378304,
+        "philosopher_id": 9,
+        "operation_id": "phil_9_recv_1760029568937",
+        "operation_type": "recv",
+        "target_philosophers": [
+          10,
+          8
+        ]
+      },
+      {
+        "timestamp": 1760029568.9922247,
+        "philosopher_id": 53,
+        "operation_id": "phil_53_send_1760029568992",
+        "operation_type": "send",
+        "target_philosophers": [
+          52,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029568.9922247,
+        "philosopher_id": 20,
+        "operation_id": "phil_20_recv_1760029568992",
+        "operation_type": "recv",
+        "target_philosophers": [
+          21,
+          19
+        ]
+      },
+      {
+        "timestamp": 1760029569.0228617,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_send_1760029569022",
+        "operation_type": "send",
+        "target_philosophers": [
+          21,
+          23
+        ]
+      },
+      {
+        "timestamp": 1760029569.0228617,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_broadcast_1760029569022",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          78,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029569.0526223,
+        "philosopher_id": 79,
+        "operation_id": "phil_79_send_1760029569052",
+        "operation_type": "send",
+        "target_philosophers": [
+          80,
+          78
+        ]
+      },
+      {
+        "timestamp": 1760029569.0526223,
+        "philosopher_id": 89,
+        "operation_id": "phil_89_recv_1760029569052",
+        "operation_type": "recv",
+        "target_philosophers": [
+          90,
+          88
+        ]
+      },
+      {
+        "timestamp": 1760029569.0807989,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_recv_1760029569080",
+        "operation_type": "recv",
+        "target_philosophers": [
+          59,
+          61
+        ]
+      },
+      {
+        "timestamp": 1760029569.0807989,
+        "philosopher_id": 40,
+        "operation_id": "phil_40_send_1760029569080",
+        "operation_type": "send",
+        "target_philosophers": [
+          39,
+          41
+        ]
+      },
+      {
+        "timestamp": 1760029569.166527,
+        "philosopher_id": 12,
+        "operation_id": "phil_12_send_1760029569166",
+        "operation_type": "send",
+        "target_philosophers": [
+          13,
+          11
+        ]
+      },
+      {
+        "timestamp": 1760029569.281353,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_send_1760029569281",
+        "operation_type": "send",
+        "target_philosophers": [
+          48,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029569.281353,
+        "philosopher_id": 41,
+        "operation_id": "phil_41_recv_1760029569281",
+        "operation_type": "recv",
+        "target_philosophers": [
+          40,
+          42
+        ]
+      },
+      {
+        "timestamp": 1760029569.3721304,
+        "philosopher_id": 76,
+        "operation_id": "phil_76_recv_1760029569372",
+        "operation_type": "recv",
+        "target_philosophers": [
+          77,
+          75
+        ]
+      },
+      {
+        "timestamp": 1760029569.4313524,
+        "philosopher_id": 73,
+        "operation_id": "phil_73_broadcast_1760029569431",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          72,
+          74
+        ]
+      },
+      {
+        "timestamp": 1760029569.4313524,
+        "philosopher_id": 31,
+        "operation_id": "phil_31_send_1760029569431",
+        "operation_type": "send",
+        "target_philosophers": [
+          30,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029569.492638,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_recv_1760029569492",
+        "operation_type": "recv",
+        "target_philosophers": [
+          24,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029569.6405888,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_broadcast_1760029569640",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          73,
+          71
+        ]
+      },
+      {
+        "timestamp": 1760029569.6405888,
+        "philosopher_id": 82,
+        "operation_id": "phil_82_broadcast_1760029569640",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          83,
+          81
+        ]
+      },
+      {
+        "timestamp": 1760029569.7378588,
+        "philosopher_id": 51,
+        "operation_id": "phil_51_recv_1760029569737",
+        "operation_type": "recv",
+        "target_philosophers": [
+          52,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029569.770145,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_recv_1760029569770",
+        "operation_type": "recv",
+        "target_philosophers": [
+          86,
+          84
+        ]
+      },
+      {
+        "timestamp": 1760029569.835916,
+        "philosopher_id": 87,
+        "operation_id": "phil_87_send_1760029569835",
+        "operation_type": "send",
+        "target_philosophers": [
+          86,
+          88
+        ]
+      },
+      {
+        "timestamp": 1760029569.835916,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_broadcast_1760029569835",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          3,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029569.9372325,
+        "philosopher_id": 76,
+        "operation_id": "phil_76_recv_1760029569937",
+        "operation_type": "recv",
+        "target_philosophers": [
+          75,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029569.9372325,
+        "philosopher_id": 88,
+        "operation_id": "phil_88_broadcast_1760029569937",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          87,
+          89
+        ]
+      },
+      {
+        "timestamp": 1760029569.9372325,
+        "philosopher_id": 31,
+        "operation_id": "phil_31_recv_1760029569937",
+        "operation_type": "recv",
+        "target_philosophers": [
+          32,
+          30
+        ]
+      },
+      {
+        "timestamp": 1760029569.971917,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_recv_1760029569971",
+        "operation_type": "recv",
+        "target_philosophers": [
+          66,
+          64
+        ]
+      },
+      {
+        "timestamp": 1760029569.971917,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_broadcast_1760029569971",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          7,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029570.049689,
+        "philosopher_id": 30,
+        "operation_id": "phil_30_send_1760029570049",
+        "operation_type": "send",
+        "target_philosophers": [
+          29,
+          31
+        ]
+      },
+      {
+        "timestamp": 1760029570.0836363,
+        "philosopher_id": 68,
+        "operation_id": "phil_68_broadcast_1760029570083",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          67,
+          69
+        ]
+      },
+      {
+        "timestamp": 1760029570.1176898,
+        "philosopher_id": 94,
+        "operation_id": "phil_94_broadcast_1760029570117",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          93,
+          95
+        ]
+      },
+      {
+        "timestamp": 1760029570.2956655,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_send_1760029570295",
+        "operation_type": "send",
+        "target_philosophers": [
+          23,
+          21
+        ]
+      },
+      {
+        "timestamp": 1760029570.3313615,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_send_1760029570331",
+        "operation_type": "send",
+        "target_philosophers": [
+          50,
+          48
+        ]
+      },
+      {
+        "timestamp": 1760029570.368556,
+        "philosopher_id": 33,
+        "operation_id": "phil_33_send_1760029570368",
+        "operation_type": "send",
+        "target_philosophers": [
+          34,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029570.368556,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_broadcast_1760029570368",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          9,
+          11
+        ]
+      },
+      {
+        "timestamp": 1760029570.405116,
+        "philosopher_id": 79,
+        "operation_id": "phil_79_send_1760029570405",
+        "operation_type": "send",
+        "target_philosophers": [
+          78,
+          80
+        ]
+      },
+      {
+        "timestamp": 1760029570.441621,
+        "philosopher_id": 59,
+        "operation_id": "phil_59_broadcast_1760029570441",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          60,
+          58
+        ]
+      },
+      {
+        "timestamp": 1760029570.441621,
+        "philosopher_id": 64,
+        "operation_id": "phil_64_broadcast_1760029570441",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          63,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029570.4783473,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_send_1760029570478",
+        "operation_type": "send",
+        "target_philosophers": [
+          26,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029570.4783473,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_broadcast_1760029570478",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029570.516017,
+        "philosopher_id": 24,
+        "operation_id": "phil_24_send_1760029570516",
+        "operation_type": "send",
+        "target_philosophers": [
+          23,
+          25
+        ]
+      },
+      {
+        "timestamp": 1760029570.5533931,
+        "philosopher_id": 82,
+        "operation_id": "phil_82_send_1760029570553",
+        "operation_type": "send",
+        "target_philosophers": [
+          81,
+          83
+        ]
+      },
+      {
+        "timestamp": 1760029570.6701317,
+        "philosopher_id": 38,
+        "operation_id": "phil_38_send_1760029570670",
+        "operation_type": "send",
+        "target_philosophers": [
+          37,
+          39
+        ]
+      },
+      {
+        "timestamp": 1760029570.6701317,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_send_1760029570670",
+        "operation_type": "send",
+        "target_philosophers": [
+          54,
+          56
+        ]
+      },
+      {
+        "timestamp": 1760029570.8265789,
+        "philosopher_id": 58,
+        "operation_id": "phil_58_recv_1760029570826",
+        "operation_type": "recv",
+        "target_philosophers": [
+          57,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029570.8265789,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_broadcast_1760029570826",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          55,
+          57
+        ]
+      },
+      {
+        "timestamp": 1760029570.8671248,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_send_1760029570867",
+        "operation_type": "send",
+        "target_philosophers": [
+          0,
+          98
+        ]
+      },
+      {
+        "timestamp": 1760029570.8671248,
+        "philosopher_id": 95,
+        "operation_id": "phil_95_broadcast_1760029570867",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          94,
+          96
+        ]
+      },
+      {
+        "timestamp": 1760029570.989803,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_broadcast_1760029570989",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          77,
+          79
+        ]
+      },
+      {
+        "timestamp": 1760029570.989803,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_broadcast_1760029570989",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          42,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029571.0309534,
+        "philosopher_id": 63,
+        "operation_id": "phil_63_recv_1760029571030",
+        "operation_type": "recv",
+        "target_philosophers": [
+          64,
+          62
+        ]
+      },
+      {
+        "timestamp": 1760029571.0720084,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_broadcast_1760029571072",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          68,
+          70
+        ]
+      },
+      {
+        "timestamp": 1760029571.114205,
+        "philosopher_id": 86,
+        "operation_id": "phil_86_recv_1760029571114",
+        "operation_type": "recv",
+        "target_philosophers": [
+          87,
+          85
+        ]
+      },
+      {
+        "timestamp": 1760029571.155602,
+        "philosopher_id": 16,
+        "operation_id": "phil_16_send_1760029571155",
+        "operation_type": "send",
+        "target_philosophers": [
+          17,
+          15
+        ]
+      },
+      {
+        "timestamp": 1760029571.155602,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_recv_1760029571155",
+        "operation_type": "recv",
+        "target_philosophers": [
+          80,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029571.2995443,
+        "philosopher_id": 98,
+        "operation_id": "phil_98_broadcast_1760029571299",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          97,
+          99
+        ]
+      },
+      {
+        "timestamp": 1760029571.3410785,
+        "philosopher_id": 35,
+        "operation_id": "phil_35_broadcast_1760029571341",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          34,
+          36
+        ]
+      },
+      {
+        "timestamp": 1760029571.3838918,
+        "philosopher_id": 0,
+        "operation_id": "phil_0_recv_1760029571383",
+        "operation_type": "recv",
+        "target_philosophers": [
+          1,
+          99
+        ]
+      },
+      {
+        "timestamp": 1760029571.4699502,
+        "philosopher_id": 75,
+        "operation_id": "phil_75_recv_1760029571469",
+        "operation_type": "recv",
+        "target_philosophers": [
+          74,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029571.5139642,
+        "philosopher_id": 32,
+        "operation_id": "phil_32_send_1760029571513",
+        "operation_type": "send",
+        "target_philosophers": [
+          31,
+          33
+        ]
+      },
+      {
+        "timestamp": 1760029571.5576956,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_send_1760029571557",
+        "operation_type": "send",
+        "target_philosophers": [
+          49,
+          47
+        ]
+      },
+      {
+        "timestamp": 1760029571.6028538,
+        "philosopher_id": 26,
+        "operation_id": "phil_26_recv_1760029571602",
+        "operation_type": "recv",
+        "target_philosophers": [
+          27,
+          25
+        ]
+      },
+      {
+        "timestamp": 1760029571.6890326,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_send_1760029571689",
+        "operation_type": "send",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029571.7345183,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_send_1760029571734",
+        "operation_type": "send",
+        "target_philosophers": [
+          57,
+          55
+        ]
+      },
+      {
+        "timestamp": 1760029571.8697946,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_recv_1760029571869",
+        "operation_type": "recv",
+        "target_philosophers": [
+          57,
+          55
+        ]
+      },
+      {
+        "timestamp": 1760029571.8697946,
+        "philosopher_id": 54,
+        "operation_id": "phil_54_send_1760029571869",
+        "operation_type": "send",
+        "target_philosophers": [
+          55,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029571.8697946,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_recv_1760029571869",
+        "operation_type": "recv",
+        "target_philosophers": [
+          51,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029571.9153442,
+        "philosopher_id": 92,
+        "operation_id": "phil_92_send_1760029571915",
+        "operation_type": "send",
+        "target_philosophers": [
+          93,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029571.9153442,
+        "philosopher_id": 61,
+        "operation_id": "phil_61_broadcast_1760029571915",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          60,
+          62
+        ]
+      },
+      {
+        "timestamp": 1760029572.0077097,
+        "philosopher_id": 31,
+        "operation_id": "phil_31_send_1760029572007",
+        "operation_type": "send",
+        "target_philosophers": [
+          30,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029572.0535383,
+        "philosopher_id": 32,
+        "operation_id": "phil_32_recv_1760029572053",
+        "operation_type": "recv",
+        "target_philosophers": [
+          31,
+          33
+        ]
+      },
+      {
+        "timestamp": 1760029572.0535383,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_send_1760029572053",
+        "operation_type": "send",
+        "target_philosophers": [
+          0,
+          98
+        ]
+      },
+      {
+        "timestamp": 1760029572.1925492,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_recv_1760029572192",
+        "operation_type": "recv",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029572.1925492,
+        "philosopher_id": 92,
+        "operation_id": "phil_92_recv_1760029572192",
+        "operation_type": "recv",
+        "target_philosophers": [
+          93,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029572.2397897,
+        "philosopher_id": 17,
+        "operation_id": "phil_17_send_1760029572239",
+        "operation_type": "send",
+        "target_philosophers": [
+          18,
+          16
+        ]
+      },
+      {
+        "timestamp": 1760029572.2397897,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_broadcast_1760029572239",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          61,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029572.2870405,
+        "philosopher_id": 35,
+        "operation_id": "phil_35_recv_1760029572287",
+        "operation_type": "recv",
+        "target_philosophers": [
+          34,
+          36
+        ]
+      },
+      {
+        "timestamp": 1760029572.2870405,
+        "philosopher_id": 44,
+        "operation_id": "phil_44_recv_1760029572287",
+        "operation_type": "recv",
+        "target_philosophers": [
+          45,
+          43
+        ]
+      },
+      {
+        "timestamp": 1760029572.2870405,
+        "philosopher_id": 53,
+        "operation_id": "phil_53_send_1760029572287",
+        "operation_type": "send",
+        "target_philosophers": [
+          52,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029572.3865397,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_broadcast_1760029572386",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029572.3865397,
+        "philosopher_id": 90,
+        "operation_id": "phil_90_send_1760029572386",
+        "operation_type": "send",
+        "target_philosophers": [
+          89,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029572.4350896,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_broadcast_1760029572435",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029572.5856512,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_recv_1760029572585",
+        "operation_type": "recv",
+        "target_philosophers": [
+          82,
+          84
+        ]
+      },
+      {
+        "timestamp": 1760029572.6357868,
+        "philosopher_id": 74,
+        "operation_id": "phil_74_recv_1760029572635",
+        "operation_type": "recv",
+        "target_philosophers": [
+          75,
+          73
+        ]
+      },
+      {
+        "timestamp": 1760029572.6357868,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_send_1760029572635",
+        "operation_type": "send",
+        "target_philosophers": [
+          11,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029572.685281,
+        "philosopher_id": 36,
+        "operation_id": "phil_36_broadcast_1760029572685",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          37,
+          35
+        ]
+      },
+      {
+        "timestamp": 1760029572.8323398,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_send_1760029572832",
+        "operation_type": "send",
+        "target_philosophers": [
+          73,
+          71
+        ]
+      },
+      {
+        "timestamp": 1760029572.8323398,
+        "philosopher_id": 82,
+        "operation_id": "phil_82_broadcast_1760029572832",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          81,
+          83
+        ]
+      },
+      {
+        "timestamp": 1760029572.8323398,
+        "philosopher_id": 17,
+        "operation_id": "phil_17_recv_1760029572832",
+        "operation_type": "recv",
+        "target_philosophers": [
+          16,
+          18
+        ]
+      },
+      {
+        "timestamp": 1760029572.8813627,
+        "philosopher_id": 40,
+        "operation_id": "phil_40_send_1760029572881",
+        "operation_type": "send",
+        "target_philosophers": [
+          41,
+          39
+        ]
+      },
+      {
+        "timestamp": 1760029572.9332852,
+        "philosopher_id": 84,
+        "operation_id": "phil_84_recv_1760029572933",
+        "operation_type": "recv",
+        "target_philosophers": [
+          85,
+          83
+        ]
+      },
+      {
+        "timestamp": 1760029572.984742,
+        "philosopher_id": 3,
+        "operation_id": "phil_3_send_1760029572984",
+        "operation_type": "send",
+        "target_philosophers": [
+          2,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029572.984742,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_broadcast_1760029572984",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029572.984742,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_send_1760029572984",
+        "operation_type": "send",
+        "target_philosophers": [
+          44,
+          42
+        ]
+      },
+      {
+        "timestamp": 1760029573.0365934,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_broadcast_1760029573036",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          51,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029573.0365934,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_broadcast_1760029573036",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029573.141063,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_broadcast_1760029573141",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          56,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029573.1952634,
+        "philosopher_id": 79,
+        "operation_id": "phil_79_send_1760029573195",
+        "operation_type": "send",
+        "target_philosophers": [
+          80,
+          78
+        ]
+      },
+      {
+        "timestamp": 1760029573.1952634,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_send_1760029573195",
+        "operation_type": "send",
+        "target_philosophers": [
+          24,
+          22
+        ]
+      },
+      {
+        "timestamp": 1760029573.1952634,
+        "philosopher_id": 73,
+        "operation_id": "phil_73_recv_1760029573195",
+        "operation_type": "recv",
+        "target_philosophers": [
+          74,
+          72
+        ]
+      },
+      {
+        "timestamp": 1760029573.1952634,
+        "philosopher_id": 59,
+        "operation_id": "phil_59_broadcast_1760029573195",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          58,
+          60
+        ]
+      },
+      {
+        "timestamp": 1760029573.2488658,
+        "philosopher_id": 74,
+        "operation_id": "phil_74_send_1760029573248",
+        "operation_type": "send",
+        "target_philosophers": [
+          73,
+          75
+        ]
+      },
+      {
+        "timestamp": 1760029573.2488658,
+        "philosopher_id": 38,
+        "operation_id": "phil_38_send_1760029573248",
+        "operation_type": "send",
+        "target_philosophers": [
+          39,
+          37
+        ]
+      },
+      {
+        "timestamp": 1760029573.3022077,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_send_1760029573302",
+        "operation_type": "send",
+        "target_philosophers": [
+          36,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029573.631904,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_send_1760029573631",
+        "operation_type": "send",
+        "target_philosophers": [
+          7,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029573.683724,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_recv_1760029573683",
+        "operation_type": "recv",
+        "target_philosophers": [
+          53,
+          51
+        ]
+      },
+      {
+        "timestamp": 1760029573.683724,
+        "philosopher_id": 64,
+        "operation_id": "phil_64_recv_1760029573683",
+        "operation_type": "recv",
+        "target_philosophers": [
+          63,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029573.7409327,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_send_1760029573740",
+        "operation_type": "send",
+        "target_philosophers": [
+          79,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029573.7977955,
+        "philosopher_id": 39,
+        "operation_id": "phil_39_broadcast_1760029573797",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          38,
+          40
+        ]
+      },
+      {
+        "timestamp": 1760029573.8546276,
+        "philosopher_id": 30,
+        "operation_id": "phil_30_recv_1760029573854",
+        "operation_type": "recv",
+        "target_philosophers": [
+          31,
+          29
+        ]
+      },
+      {
+        "timestamp": 1760029574.0273342,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_broadcast_1760029574027",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          29,
+          27
+        ]
+      },
+      {
+        "timestamp": 1760029574.0857975,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_send_1760029574085",
+        "operation_type": "send",
+        "target_philosophers": [
+          98,
+          0
+        ]
+      },
+      {
+        "timestamp": 1760029574.0857975,
+        "philosopher_id": 2,
+        "operation_id": "phil_2_broadcast_1760029574085",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          3,
+          1
+        ]
+      },
+      {
+        "timestamp": 1760029574.1452692,
+        "philosopher_id": 6,
+        "operation_id": "phil_6_recv_1760029574145",
+        "operation_type": "recv",
+        "target_philosophers": [
+          7,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029574.1452692,
+        "philosopher_id": 77,
+        "operation_id": "phil_77_send_1760029574145",
+        "operation_type": "send",
+        "target_philosophers": [
+          78,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029574.204537,
+        "philosopher_id": 26,
+        "operation_id": "phil_26_broadcast_1760029574204",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          25,
+          27
+        ]
+      },
+      {
+        "timestamp": 1760029574.262469,
+        "philosopher_id": 13,
+        "operation_id": "phil_13_send_1760029574262",
+        "operation_type": "send",
+        "target_philosophers": [
+          12,
+          14
+        ]
+      },
+      {
+        "timestamp": 1760029574.3194268,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_send_1760029574319",
+        "operation_type": "send",
+        "target_philosophers": [
+          9,
+          11
+        ]
+      },
+      {
+        "timestamp": 1760029574.3194268,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_send_1760029574319",
+        "operation_type": "send",
+        "target_philosophers": [
+          7,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029574.3194268,
+        "philosopher_id": 90,
+        "operation_id": "phil_90_broadcast_1760029574319",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          89,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029574.4389005,
+        "philosopher_id": 86,
+        "operation_id": "phil_86_broadcast_1760029574438",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          87,
+          85
+        ]
+      },
+      {
+        "timestamp": 1760029574.5599606,
+        "philosopher_id": 90,
+        "operation_id": "phil_90_broadcast_1760029574559",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          91,
+          89
+        ]
+      },
+      {
+        "timestamp": 1760029574.6211245,
+        "philosopher_id": 15,
+        "operation_id": "phil_15_send_1760029574621",
+        "operation_type": "send",
+        "target_philosophers": [
+          16,
+          14
+        ]
+      },
+      {
+        "timestamp": 1760029574.6211245,
+        "philosopher_id": 14,
+        "operation_id": "phil_14_recv_1760029574621",
+        "operation_type": "recv",
+        "target_philosophers": [
+          13,
+          15
+        ]
+      },
+      {
+        "timestamp": 1760029574.7966516,
+        "philosopher_id": 33,
+        "operation_id": "phil_33_broadcast_1760029574796",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          34,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029574.9187276,
+        "philosopher_id": 92,
+        "operation_id": "phil_92_broadcast_1760029574918",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          91,
+          93
+        ]
+      },
+      {
+        "timestamp": 1760029574.9804296,
+        "philosopher_id": 86,
+        "operation_id": "phil_86_send_1760029574980",
+        "operation_type": "send",
+        "target_philosophers": [
+          85,
+          87
+        ]
+      },
+      {
+        "timestamp": 1760029574.9804296,
+        "philosopher_id": 42,
+        "operation_id": "phil_42_send_1760029574980",
+        "operation_type": "send",
+        "target_philosophers": [
+          41,
+          43
+        ]
+      },
+      {
+        "timestamp": 1760029575.0402846,
+        "philosopher_id": 18,
+        "operation_id": "phil_18_send_1760029575040",
+        "operation_type": "send",
+        "target_philosophers": [
+          17,
+          19
+        ]
+      },
+      {
+        "timestamp": 1760029575.0402846,
+        "philosopher_id": 3,
+        "operation_id": "phil_3_send_1760029575040",
+        "operation_type": "send",
+        "target_philosophers": [
+          4,
+          2
+        ]
+      },
+      {
+        "timestamp": 1760029575.0402846,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_broadcast_1760029575040",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          0,
+          98
+        ]
+      },
+      {
+        "timestamp": 1760029575.0402846,
+        "philosopher_id": 12,
+        "operation_id": "phil_12_recv_1760029575040",
+        "operation_type": "recv",
+        "target_philosophers": [
+          11,
+          13
+        ]
+      },
+      {
+        "timestamp": 1760029575.1018846,
+        "philosopher_id": 76,
+        "operation_id": "phil_76_recv_1760029575101",
+        "operation_type": "recv",
+        "target_philosophers": [
+          77,
+          75
+        ]
+      },
+      {
+        "timestamp": 1760029575.1018846,
+        "philosopher_id": 62,
+        "operation_id": "phil_62_recv_1760029575101",
+        "operation_type": "recv",
+        "target_philosophers": [
+          61,
+          63
+        ]
+      },
+      {
+        "timestamp": 1760029575.1650202,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_send_1760029575165",
+        "operation_type": "send",
+        "target_philosophers": [
+          82,
+          80
+        ]
+      },
+      {
+        "timestamp": 1760029575.2308068,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_recv_1760029575230",
+        "operation_type": "recv",
+        "target_philosophers": [
+          67,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029575.2308068,
+        "philosopher_id": 19,
+        "operation_id": "phil_19_broadcast_1760029575230",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          20,
+          18
+        ]
+      },
+      {
+        "timestamp": 1760029575.2308068,
+        "philosopher_id": 89,
+        "operation_id": "phil_89_send_1760029575230",
+        "operation_type": "send",
+        "target_philosophers": [
+          88,
+          90
+        ]
+      },
+      {
+        "timestamp": 1760029575.2308068,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_send_1760029575230",
+        "operation_type": "send",
+        "target_philosophers": [
+          9,
+          7
+        ]
+      },
+      {
+        "timestamp": 1760029575.426621,
+        "philosopher_id": 78,
+        "operation_id": "phil_78_broadcast_1760029575426",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          79,
+          77
+        ]
+      },
+      {
+        "timestamp": 1760029575.555431,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_broadcast_1760029575555",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029575.555431,
+        "philosopher_id": 11,
+        "operation_id": "phil_11_broadcast_1760029575555",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          10,
+          12
+        ]
+      },
+      {
+        "timestamp": 1760029575.6203668,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_recv_1760029575620",
+        "operation_type": "recv",
+        "target_philosophers": [
+          73,
+          71
+        ]
+      },
+      {
+        "timestamp": 1760029575.6203668,
+        "philosopher_id": 96,
+        "operation_id": "phil_96_recv_1760029575620",
+        "operation_type": "recv",
+        "target_philosophers": [
+          95,
+          97
+        ]
+      },
+      {
+        "timestamp": 1760029575.683052,
+        "philosopher_id": 90,
+        "operation_id": "phil_90_broadcast_1760029575683",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          89,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029575.683052,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_recv_1760029575683",
+        "operation_type": "recv",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029575.7481155,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_send_1760029575748",
+        "operation_type": "send",
+        "target_philosophers": [
+          22,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029575.7481155,
+        "philosopher_id": 36,
+        "operation_id": "phil_36_broadcast_1760029575748",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          37,
+          35
+        ]
+      },
+      {
+        "timestamp": 1760029575.7481155,
+        "philosopher_id": 26,
+        "operation_id": "phil_26_send_1760029575748",
+        "operation_type": "send",
+        "target_philosophers": [
+          25,
+          27
+        ]
+      },
+      {
+        "timestamp": 1760029575.875718,
+        "philosopher_id": 27,
+        "operation_id": "phil_27_send_1760029575875",
+        "operation_type": "send",
+        "target_philosophers": [
+          28,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029575.875718,
+        "philosopher_id": 30,
+        "operation_id": "phil_30_send_1760029575875",
+        "operation_type": "send",
+        "target_philosophers": [
+          29,
+          31
+        ]
+      },
+      {
+        "timestamp": 1760029575.875718,
+        "philosopher_id": 61,
+        "operation_id": "phil_61_broadcast_1760029575875",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          62,
+          60
+        ]
+      },
+      {
+        "timestamp": 1760029575.875718,
+        "philosopher_id": 96,
+        "operation_id": "phil_96_broadcast_1760029575875",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          95,
+          97
+        ]
+      },
+      {
+        "timestamp": 1760029576.009885,
+        "philosopher_id": 59,
+        "operation_id": "phil_59_recv_1760029576009",
+        "operation_type": "recv",
+        "target_philosophers": [
+          60,
+          58
+        ]
+      },
+      {
+        "timestamp": 1760029576.0775099,
+        "philosopher_id": 19,
+        "operation_id": "phil_19_broadcast_1760029576077",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          18,
+          20
+        ]
+      },
+      {
+        "timestamp": 1760029576.2148066,
+        "philosopher_id": 11,
+        "operation_id": "phil_11_recv_1760029576214",
+        "operation_type": "recv",
+        "target_philosophers": [
+          12,
+          10
+        ]
+      },
+      {
+        "timestamp": 1760029576.28393,
+        "philosopher_id": 35,
+        "operation_id": "phil_35_recv_1760029576283",
+        "operation_type": "recv",
+        "target_philosophers": [
+          34,
+          36
+        ]
+      },
+      {
+        "timestamp": 1760029576.4232697,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_broadcast_1760029576423",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          36,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029576.7740319,
+        "philosopher_id": 17,
+        "operation_id": "phil_17_recv_1760029576774",
+        "operation_type": "recv",
+        "target_philosophers": [
+          16,
+          18
+        ]
+      },
+      {
+        "timestamp": 1760029576.840374,
+        "philosopher_id": 58,
+        "operation_id": "phil_58_send_1760029576840",
+        "operation_type": "send",
+        "target_philosophers": [
+          57,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029576.909812,
+        "philosopher_id": 94,
+        "operation_id": "phil_94_send_1760029576909",
+        "operation_type": "send",
+        "target_philosophers": [
+          93,
+          95
+        ]
+      },
+      {
+        "timestamp": 1760029576.9811063,
+        "philosopher_id": 56,
+        "operation_id": "phil_56_broadcast_1760029576981",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          57,
+          55
+        ]
+      },
+      {
+        "timestamp": 1760029577.0520906,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_broadcast_1760029577052",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029577.2624896,
+        "philosopher_id": 47,
+        "operation_id": "phil_47_recv_1760029577262",
+        "operation_type": "recv",
+        "target_philosophers": [
+          46,
+          48
+        ]
+      },
+      {
+        "timestamp": 1760029577.336739,
+        "philosopher_id": 47,
+        "operation_id": "phil_47_broadcast_1760029577336",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          48,
+          46
+        ]
+      },
+      {
+        "timestamp": 1760029577.336739,
+        "philosopher_id": 94,
+        "operation_id": "phil_94_recv_1760029577336",
+        "operation_type": "recv",
+        "target_philosophers": [
+          95,
+          93
+        ]
+      },
+      {
+        "timestamp": 1760029577.5519135,
+        "philosopher_id": 67,
+        "operation_id": "phil_67_recv_1760029577551",
+        "operation_type": "recv",
+        "target_philosophers": [
+          66,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029577.5519135,
+        "philosopher_id": 24,
+        "operation_id": "phil_24_broadcast_1760029577551",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          25,
+          23
+        ]
+      },
+      {
+        "timestamp": 1760029577.6258633,
+        "philosopher_id": 17,
+        "operation_id": "phil_17_recv_1760029577625",
+        "operation_type": "recv",
+        "target_philosophers": [
+          16,
+          18
+        ]
+      },
+      {
+        "timestamp": 1760029577.6258633,
+        "philosopher_id": 73,
+        "operation_id": "phil_73_send_1760029577625",
+        "operation_type": "send",
+        "target_philosophers": [
+          72,
+          74
+        ]
+      },
+      {
+        "timestamp": 1760029577.6978927,
+        "philosopher_id": 63,
+        "operation_id": "phil_63_broadcast_1760029577697",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          62,
+          64
+        ]
+      },
+      {
+        "timestamp": 1760029577.7705016,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_send_1760029577770",
+        "operation_type": "send",
+        "target_philosophers": [
+          23,
+          21
+        ]
+      },
+      {
+        "timestamp": 1760029577.8408344,
+        "philosopher_id": 66,
+        "operation_id": "phil_66_send_1760029577840",
+        "operation_type": "send",
+        "target_philosophers": [
+          67,
+          65
+        ]
+      },
+      {
+        "timestamp": 1760029577.8408344,
+        "philosopher_id": 33,
+        "operation_id": "phil_33_send_1760029577840",
+        "operation_type": "send",
+        "target_philosophers": [
+          34,
+          32
+        ]
+      },
+      {
+        "timestamp": 1760029577.986549,
+        "philosopher_id": 65,
+        "operation_id": "phil_65_broadcast_1760029577986",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          66,
+          64
+        ]
+      },
+      {
+        "timestamp": 1760029578.2053318,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_send_1760029578205",
+        "operation_type": "send",
+        "target_philosophers": [
+          84,
+          86
+        ]
+      },
+      {
+        "timestamp": 1760029578.2053318,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_broadcast_1760029578205",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          56,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029578.2807107,
+        "philosopher_id": 16,
+        "operation_id": "phil_16_send_1760029578280",
+        "operation_type": "send",
+        "target_philosophers": [
+          17,
+          15
+        ]
+      },
+      {
+        "timestamp": 1760029578.358307,
+        "philosopher_id": 79,
+        "operation_id": "phil_79_recv_1760029578358",
+        "operation_type": "recv",
+        "target_philosophers": [
+          78,
+          80
+        ]
+      },
+      {
+        "timestamp": 1760029578.358307,
+        "philosopher_id": 21,
+        "operation_id": "phil_21_broadcast_1760029578358",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          22,
+          20
+        ]
+      },
+      {
+        "timestamp": 1760029578.4367537,
+        "philosopher_id": 5,
+        "operation_id": "phil_5_send_1760029578436",
+        "operation_type": "send",
+        "target_philosophers": [
+          6,
+          4
+        ]
+      },
+      {
+        "timestamp": 1760029578.5148578,
+        "philosopher_id": 3,
+        "operation_id": "phil_3_send_1760029578514",
+        "operation_type": "send",
+        "target_philosophers": [
+          4,
+          2
+        ]
+      },
+      {
+        "timestamp": 1760029578.592626,
+        "philosopher_id": 92,
+        "operation_id": "phil_92_recv_1760029578592",
+        "operation_type": "recv",
+        "target_philosophers": [
+          91,
+          93
+        ]
+      },
+      {
+        "timestamp": 1760029578.592626,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_send_1760029578592",
+        "operation_type": "send",
+        "target_philosophers": [
+          82,
+          80
+        ]
+      },
+      {
+        "timestamp": 1760029578.991776,
+        "philosopher_id": 96,
+        "operation_id": "phil_96_broadcast_1760029578991",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          95,
+          97
+        ]
+      },
+      {
+        "timestamp": 1760029578.991776,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_send_1760029578991",
+        "operation_type": "send",
+        "target_philosophers": [
+          53,
+          51
+        ]
+      },
+      {
+        "timestamp": 1760029579.074198,
+        "philosopher_id": 12,
+        "operation_id": "phil_12_broadcast_1760029579074",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          11,
+          13
+        ]
+      },
+      {
+        "timestamp": 1760029579.1545718,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_recv_1760029579154",
+        "operation_type": "recv",
+        "target_philosophers": [
+          51,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029579.1545718,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_broadcast_1760029579154",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          0,
+          98
+        ]
+      },
+      {
+        "timestamp": 1760029579.2364433,
+        "philosopher_id": 89,
+        "operation_id": "phil_89_send_1760029579236",
+        "operation_type": "send",
+        "target_philosophers": [
+          90,
+          88
+        ]
+      },
+      {
+        "timestamp": 1760029579.317183,
+        "philosopher_id": 53,
+        "operation_id": "phil_53_broadcast_1760029579317",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          52,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029579.396843,
+        "philosopher_id": 57,
+        "operation_id": "phil_57_broadcast_1760029579396",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          58,
+          56
+        ]
+      },
+      {
+        "timestamp": 1760029579.4764104,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_send_1760029579476",
+        "operation_type": "send",
+        "target_philosophers": [
+          51,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029579.5576227,
+        "philosopher_id": 49,
+        "operation_id": "phil_49_send_1760029579557",
+        "operation_type": "send",
+        "target_philosophers": [
+          48,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029579.5576227,
+        "philosopher_id": 35,
+        "operation_id": "phil_35_broadcast_1760029579557",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          36,
+          34
+        ]
+      },
+      {
+        "timestamp": 1760029579.6409228,
+        "philosopher_id": 84,
+        "operation_id": "phil_84_broadcast_1760029579640",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          85,
+          83
+        ]
+      },
+      {
+        "timestamp": 1760029579.7251856,
+        "philosopher_id": 88,
+        "operation_id": "phil_88_broadcast_1760029579725",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          89,
+          87
+        ]
+      },
+      {
+        "timestamp": 1760029579.7251856,
+        "philosopher_id": 69,
+        "operation_id": "phil_69_send_1760029579725",
+        "operation_type": "send",
+        "target_philosophers": [
+          70,
+          68
+        ]
+      },
+      {
+        "timestamp": 1760029579.7251856,
+        "philosopher_id": 45,
+        "operation_id": "phil_45_broadcast_1760029579725",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          46,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029579.7251856,
+        "philosopher_id": 72,
+        "operation_id": "phil_72_broadcast_1760029579725",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          71,
+          73
+        ]
+      },
+      {
+        "timestamp": 1760029579.892063,
+        "philosopher_id": 51,
+        "operation_id": "phil_51_broadcast_1760029579892",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          50,
+          52
+        ]
+      },
+      {
+        "timestamp": 1760029579.892063,
+        "philosopher_id": 37,
+        "operation_id": "phil_37_recv_1760029579892",
+        "operation_type": "recv",
+        "target_philosophers": [
+          36,
+          38
+        ]
+      },
+      {
+        "timestamp": 1760029579.9753964,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_recv_1760029579975",
+        "operation_type": "recv",
+        "target_philosophers": [
+          84,
+          86
+        ]
+      },
+      {
+        "timestamp": 1760029579.9753964,
+        "philosopher_id": 71,
+        "operation_id": "phil_71_send_1760029579975",
+        "operation_type": "send",
+        "target_philosophers": [
+          70,
+          72
+        ]
+      },
+      {
+        "timestamp": 1760029579.9753964,
+        "philosopher_id": 11,
+        "operation_id": "phil_11_send_1760029579975",
+        "operation_type": "send",
+        "target_philosophers": [
+          12,
+          10
+        ]
+      },
+      {
+        "timestamp": 1760029580.0618844,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_broadcast_1760029580061",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029580.0618844,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_send_1760029580061",
+        "operation_type": "send",
+        "target_philosophers": [
+          24,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029580.1444232,
+        "philosopher_id": 40,
+        "operation_id": "phil_40_send_1760029580144",
+        "operation_type": "send",
+        "target_philosophers": [
+          39,
+          41
+        ]
+      },
+      {
+        "timestamp": 1760029580.1444232,
+        "philosopher_id": 38,
+        "operation_id": "phil_38_recv_1760029580144",
+        "operation_type": "recv",
+        "target_philosophers": [
+          37,
+          39
+        ]
+      },
+      {
+        "timestamp": 1760029580.315721,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_recv_1760029580315",
+        "operation_type": "recv",
+        "target_philosophers": [
+          23,
+          21
+        ]
+      },
+      {
+        "timestamp": 1760029580.315721,
+        "philosopher_id": 12,
+        "operation_id": "phil_12_broadcast_1760029580315",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          13,
+          11
+        ]
+      },
+      {
+        "timestamp": 1760029580.4024372,
+        "philosopher_id": 53,
+        "operation_id": "phil_53_broadcast_1760029580402",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          54,
+          52
+        ]
+      },
+      {
+        "timestamp": 1760029580.4877143,
+        "philosopher_id": 8,
+        "operation_id": "phil_8_recv_1760029580487",
+        "operation_type": "recv",
+        "target_philosophers": [
+          9,
+          7
+        ]
+      },
+      {
+        "timestamp": 1760029580.5748618,
+        "philosopher_id": 52,
+        "operation_id": "phil_52_broadcast_1760029580574",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          51,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029580.5748618,
+        "philosopher_id": 23,
+        "operation_id": "phil_23_send_1760029580574",
+        "operation_type": "send",
+        "target_philosophers": [
+          22,
+          24
+        ]
+      },
+      {
+        "timestamp": 1760029580.6617186,
+        "philosopher_id": 26,
+        "operation_id": "phil_26_broadcast_1760029580661",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          25,
+          27
+        ]
+      },
+      {
+        "timestamp": 1760029580.836875,
+        "philosopher_id": 83,
+        "operation_id": "phil_83_send_1760029580836",
+        "operation_type": "send",
+        "target_philosophers": [
+          84,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029580.9261239,
+        "philosopher_id": 87,
+        "operation_id": "phil_87_send_1760029580926",
+        "operation_type": "send",
+        "target_philosophers": [
+          86,
+          88
+        ]
+      },
+      {
+        "timestamp": 1760029580.9261239,
+        "philosopher_id": 32,
+        "operation_id": "phil_32_recv_1760029580926",
+        "operation_type": "recv",
+        "target_philosophers": [
+          31,
+          33
+        ]
+      },
+      {
+        "timestamp": 1760029581.1075675,
+        "philosopher_id": 20,
+        "operation_id": "phil_20_send_1760029581107",
+        "operation_type": "send",
+        "target_philosophers": [
+          21,
+          19
+        ]
+      },
+      {
+        "timestamp": 1760029581.4742706,
+        "philosopher_id": 50,
+        "operation_id": "phil_50_broadcast_1760029581474",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          49,
+          51
+        ]
+      },
+      {
+        "timestamp": 1760029581.4742706,
+        "philosopher_id": 54,
+        "operation_id": "phil_54_recv_1760029581474",
+        "operation_type": "recv",
+        "target_philosophers": [
+          55,
+          53
+        ]
+      },
+      {
+        "timestamp": 1760029581.4742706,
+        "philosopher_id": 24,
+        "operation_id": "phil_24_recv_1760029581474",
+        "operation_type": "recv",
+        "target_philosophers": [
+          23,
+          25
+        ]
+      },
+      {
+        "timestamp": 1760029581.6557262,
+        "philosopher_id": 40,
+        "operation_id": "phil_40_broadcast_1760029581655",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          41,
+          39
+        ]
+      },
+      {
+        "timestamp": 1760029581.9319575,
+        "philosopher_id": 6,
+        "operation_id": "phil_6_recv_1760029581931",
+        "operation_type": "recv",
+        "target_philosophers": [
+          7,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029581.9319575,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_recv_1760029581931",
+        "operation_type": "recv",
+        "target_philosophers": [
+          98,
+          0
+        ]
+      },
+      {
+        "timestamp": 1760029582.0242834,
+        "philosopher_id": 26,
+        "operation_id": "phil_26_send_1760029582024",
+        "operation_type": "send",
+        "target_philosophers": [
+          27,
+          25
+        ]
+      },
+      {
+        "timestamp": 1760029582.0242834,
+        "philosopher_id": 10,
+        "operation_id": "phil_10_broadcast_1760029582024",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          11,
+          9
+        ]
+      },
+      {
+        "timestamp": 1760029582.118466,
+        "philosopher_id": 7,
+        "operation_id": "phil_7_recv_1760029582118",
+        "operation_type": "recv",
+        "target_philosophers": [
+          6,
+          8
+        ]
+      },
+      {
+        "timestamp": 1760029582.2117877,
+        "philosopher_id": 90,
+        "operation_id": "phil_90_send_1760029582211",
+        "operation_type": "send",
+        "target_philosophers": [
+          89,
+          91
+        ]
+      },
+      {
+        "timestamp": 1760029582.3067026,
+        "philosopher_id": 9,
+        "operation_id": "phil_9_broadcast_1760029582306",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          8,
+          10
+        ]
+      },
+      {
+        "timestamp": 1760029582.4009907,
+        "philosopher_id": 21,
+        "operation_id": "phil_21_recv_1760029582400",
+        "operation_type": "recv",
+        "target_philosophers": [
+          20,
+          22
+        ]
+      },
+      {
+        "timestamp": 1760029582.4009907,
+        "philosopher_id": 55,
+        "operation_id": "phil_55_send_1760029582400",
+        "operation_type": "send",
+        "target_philosophers": [
+          56,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029582.4969687,
+        "philosopher_id": 85,
+        "operation_id": "phil_85_broadcast_1760029582496",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          84,
+          86
+        ]
+      },
+      {
+        "timestamp": 1760029582.5922744,
+        "philosopher_id": 95,
+        "operation_id": "phil_95_broadcast_1760029582592",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          96,
+          94
+        ]
+      },
+      {
+        "timestamp": 1760029582.6872275,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_broadcast_1760029582687",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          42,
+          44
+        ]
+      },
+      {
+        "timestamp": 1760029582.6872275,
+        "philosopher_id": 96,
+        "operation_id": "phil_96_broadcast_1760029582687",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          97,
+          95
+        ]
+      },
+      {
+        "timestamp": 1760029582.9761279,
+        "philosopher_id": 47,
+        "operation_id": "phil_47_recv_1760029582976",
+        "operation_type": "recv",
+        "target_philosophers": [
+          48,
+          46
+        ]
+      },
+      {
+        "timestamp": 1760029583.2680693,
+        "philosopher_id": 5,
+        "operation_id": "phil_5_send_1760029583268",
+        "operation_type": "send",
+        "target_philosophers": [
+          4,
+          6
+        ]
+      },
+      {
+        "timestamp": 1760029583.2680693,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_broadcast_1760029583268",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          27,
+          29
+        ]
+      },
+      {
+        "timestamp": 1760029583.3658571,
+        "philosopher_id": 46,
+        "operation_id": "phil_46_broadcast_1760029583365",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          45,
+          47
+        ]
+      },
+      {
+        "timestamp": 1760029583.4647715,
+        "philosopher_id": 13,
+        "operation_id": "phil_13_send_1760029583464",
+        "operation_type": "send",
+        "target_philosophers": [
+          12,
+          14
+        ]
+      },
+      {
+        "timestamp": 1760029583.564669,
+        "philosopher_id": 31,
+        "operation_id": "phil_31_recv_1760029583564",
+        "operation_type": "recv",
+        "target_philosophers": [
+          32,
+          30
+        ]
+      },
+      {
+        "timestamp": 1760029583.564669,
+        "philosopher_id": 89,
+        "operation_id": "phil_89_broadcast_1760029583564",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          88,
+          90
+        ]
+      },
+      {
+        "timestamp": 1760029583.6664445,
+        "philosopher_id": 71,
+        "operation_id": "phil_71_recv_1760029583666",
+        "operation_type": "recv",
+        "target_philosophers": [
+          70,
+          72
+        ]
+      },
+      {
+        "timestamp": 1760029583.7657962,
+        "philosopher_id": 67,
+        "operation_id": "phil_67_send_1760029583765",
+        "operation_type": "send",
+        "target_philosophers": [
+          68,
+          66
+        ]
+      },
+      {
+        "timestamp": 1760029583.8658848,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_broadcast_1760029583865",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          3,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029583.8658848,
+        "philosopher_id": 5,
+        "operation_id": "phil_5_send_1760029583865",
+        "operation_type": "send",
+        "target_philosophers": [
+          4,
+          6
+        ]
+      },
+      {
+        "timestamp": 1760029583.8658848,
+        "philosopher_id": 81,
+        "operation_id": "phil_81_recv_1760029583865",
+        "operation_type": "recv",
+        "target_philosophers": [
+          80,
+          82
+        ]
+      },
+      {
+        "timestamp": 1760029584.1726007,
+        "philosopher_id": 51,
+        "operation_id": "phil_51_broadcast_1760029584172",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          52,
+          50
+        ]
+      },
+      {
+        "timestamp": 1760029584.2741418,
+        "philosopher_id": 43,
+        "operation_id": "phil_43_send_1760029584274",
+        "operation_type": "send",
+        "target_philosophers": [
+          44,
+          42
+        ]
+      },
+      {
+        "timestamp": 1760029584.2741418,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_recv_1760029584274",
+        "operation_type": "recv",
+        "target_philosophers": [
+          59,
+          61
+        ]
+      },
+      {
+        "timestamp": 1760029584.2741418,
+        "philosopher_id": 94,
+        "operation_id": "phil_94_broadcast_1760029584274",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          95,
+          93
+        ]
+      },
+      {
+        "timestamp": 1760029584.2741418,
+        "philosopher_id": 44,
+        "operation_id": "phil_44_recv_1760029584274",
+        "operation_type": "recv",
+        "target_philosophers": [
+          43,
+          45
+        ]
+      },
+      {
+        "timestamp": 1760029584.3687582,
+        "philosopher_id": 99,
+        "operation_id": "phil_99_recv_1760029584368",
+        "operation_type": "recv",
+        "target_philosophers": [
+          98,
+          0
+        ]
+      },
+      {
+        "timestamp": 1760029584.3687582,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_broadcast_1760029584368",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029584.6830072,
+        "philosopher_id": 28,
+        "operation_id": "phil_28_send_1760029584683",
+        "operation_type": "send",
+        "target_philosophers": [
+          27,
+          29
+        ]
+      },
+      {
+        "timestamp": 1760029584.785245,
+        "philosopher_id": 62,
+        "operation_id": "phil_62_send_1760029584785",
+        "operation_type": "send",
+        "target_philosophers": [
+          61,
+          63
+        ]
+      },
+      {
+        "timestamp": 1760029584.8887284,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_broadcast_1760029584888",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          3,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029585.096566,
+        "philosopher_id": 25,
+        "operation_id": "phil_25_broadcast_1760029585096",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          24,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029585.096566,
+        "philosopher_id": 44,
+        "operation_id": "phil_44_send_1760029585096",
+        "operation_type": "send",
+        "target_philosophers": [
+          45,
+          43
+        ]
+      },
+      {
+        "timestamp": 1760029585.3076744,
+        "philosopher_id": 75,
+        "operation_id": "phil_75_send_1760029585307",
+        "operation_type": "send",
+        "target_philosophers": [
+          74,
+          76
+        ]
+      },
+      {
+        "timestamp": 1760029585.4165838,
+        "philosopher_id": 79,
+        "operation_id": "phil_79_send_1760029585416",
+        "operation_type": "send",
+        "target_philosophers": [
+          80,
+          78
+        ]
+      },
+      {
+        "timestamp": 1760029585.4165838,
+        "philosopher_id": 48,
+        "operation_id": "phil_48_recv_1760029585416",
+        "operation_type": "recv",
+        "target_philosophers": [
+          47,
+          49
+        ]
+      },
+      {
+        "timestamp": 1760029585.5240402,
+        "philosopher_id": 12,
+        "operation_id": "phil_12_recv_1760029585524",
+        "operation_type": "recv",
+        "target_philosophers": [
+          11,
+          13
+        ]
+      },
+      {
+        "timestamp": 1760029586.057947,
+        "philosopher_id": 53,
+        "operation_id": "phil_53_send_1760029586057",
+        "operation_type": "send",
+        "target_philosophers": [
+          52,
+          54
+        ]
+      },
+      {
+        "timestamp": 1760029586.057947,
+        "philosopher_id": 60,
+        "operation_id": "phil_60_recv_1760029586057",
+        "operation_type": "recv",
+        "target_philosophers": [
+          61,
+          59
+        ]
+      },
+      {
+        "timestamp": 1760029586.057947,
+        "philosopher_id": 88,
+        "operation_id": "phil_88_recv_1760029586057",
+        "operation_type": "recv",
+        "target_philosophers": [
+          89,
+          87
+        ]
+      },
+      {
+        "timestamp": 1760029586.2734942,
+        "philosopher_id": 27,
+        "operation_id": "phil_27_broadcast_1760029586273",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          28,
+          26
+        ]
+      },
+      {
+        "timestamp": 1760029586.3824449,
+        "philosopher_id": 4,
+        "operation_id": "phil_4_send_1760029586382",
+        "operation_type": "send",
+        "target_philosophers": [
+          3,
+          5
+        ]
+      },
+      {
+        "timestamp": 1760029586.4911304,
+        "philosopher_id": 54,
+        "operation_id": "phil_54_recv_1760029586491",
+        "operation_type": "recv",
+        "target_philosophers": [
+          53,
+          55
+        ]
+      },
+      {
+        "timestamp": 1760029586.4911304,
+        "philosopher_id": 84,
+        "operation_id": "phil_84_broadcast_1760029586491",
+        "operation_type": "broadcast",
+        "target_philosophers": [
+          83,
+          85
+        ]
+      },
+      {
+        "timestamp": 1760029586.7136698,
+        "philosopher_id": 22,
+        "operation_id": "phil_22_send_1760029586713",
+        "operation_type": "send",
+        "target_philosophers": [
+          23,
+          21
+        ]
+      }
+    ],
+    "philosophers_data": {
+      "positions": {
+        "0": [
+          0,
+          0
+        ],
+        "1": [
+          0,
+          0
+        ],
+        "2": [
+          0,
+          0
+        ],
+        "3": [
+          0,
+          0
+        ],
+        "4": [
+          0,
+          0
+        ],
+        "5": [
+          0,
+          0
+        ],
+        "6": [
+          0,
+          0
+        ],
+        "7": [
+          0,
+          0
+        ],
+        "8": [
+          0,
+          0
+        ],
+        "9": [
+          0,
+          0
+        ],
+        "10": [
+          0,
+          0
+        ],
+        "11": [
+          0,
+          0
+        ],
+        "12": [
+          0,
+          0
+        ],
+        "13": [
+          0,
+          0
+        ],
+        "14": [
+          0,
+          0
+        ],
+        "15": [
+          0,
+          0
+        ],
+        "16": [
+          0,
+          0
+        ],
+        "17": [
+          0,
+          0
+        ],
+        "18": [
+          0,
+          0
+        ],
+        "19": [
+          0,
+          0
+        ],
+        "20": [
+          0,
+          0
+        ],
+        "21": [
+          0,
+          0
+        ],
+        "22": [
+          0,
+          0
+        ],
+        "23": [
+          0,
+          0
+        ],
+        "24": [
+          0,
+          0
+        ],
+        "25": [
+          0,
+          0
+        ],
+        "26": [
+          0,
+          0
+        ],
+        "27": [
+          0,
+          0
+        ],
+        "28": [
+          0,
+          0
+        ],
+        "29": [
+          0,
+          0
+        ],
+        "30": [
+          0,
+          0
+        ],
+        "31": [
+          0,
+          0
+        ],
+        "32": [
+          0,
+          0
+        ],
+        "33": [
+          0,
+          0
+        ],
+        "34": [
+          0,
+          0
+        ],
+        "35": [
+          0,
+          0
+        ],
+        "36": [
+          0,
+          0
+        ],
+        "37": [
+          0,
+          0
+        ],
+        "38": [
+          0,
+          0
+        ],
+        "39": [
+          0,
+          0
+        ],
+        "40": [
+          0,
+          0
+        ],
+        "41": [
+          0,
+          0
+        ],
+        "42": [
+          0,
+          0
+        ],
+        "43": [
+          0,
+          0
+        ],
+        "44": [
+          0,
+          0
+        ],
+        "45": [
+          0,
+          0
+        ],
+        "46": [
+          0,
+          0
+        ],
+        "47": [
+          0,
+          0
+        ],
+        "48": [
+          0,
+          0
+        ],
+        "49": [
+          0,
+          0
+        ],
+        "50": [
+          0,
+          0
+        ],
+        "51": [
+          0,
+          0
+        ],
+        "52": [
+          0,
+          0
+        ],
+        "53": [
+          0,
+          0
+        ],
+        "54": [
+          0,
+          0
+        ],
+        "55": [
+          0,
+          0
+        ],
+        "56": [
+          0,
+          0
+        ],
+        "57": [
+          0,
+          0
+        ],
+        "58": [
+          0,
+          0
+        ],
+        "59": [
+          0,
+          0
+        ],
+        "60": [
+          0,
+          0
+        ],
+        "61": [
+          0,
+          0
+        ],
+        "62": [
+          0,
+          0
+        ],
+        "63": [
+          0,
+          0
+        ],
+        "64": [
+          0,
+          0
+        ],
+        "65": [
+          0,
+          0
+        ],
+        "66": [
+          0,
+          0
+        ],
+        "67": [
+          0,
+          0
+        ],
+        "68": [
+          0,
+          0
+        ],
+        "69": [
+          0,
+          0
+        ],
+        "70": [
+          0,
+          0
+        ],
+        "71": [
+          0,
+          0
+        ],
+        "72": [
+          0,
+          0
+        ],
+        "73": [
+          0,
+          0
+        ],
+        "74": [
+          0,
+          0
+        ],
+        "75": [
+          0,
+          0
+        ],
+        "76": [
+          0,
+          0
+        ],
+        "77": [
+          0,
+          0
+        ],
+        "78": [
+          0,
+          0
+        ],
+        "79": [
+          0,
+          0
+        ],
+        "80": [
+          0,
+          0
+        ],
+        "81": [
+          0,
+          0
+        ],
+        "82": [
+          0,
+          0
+        ],
+        "83": [
+          0,
+          0
+        ],
+        "84": [
+          0,
+          0
+        ],
+        "85": [
+          0,
+          0
+        ],
+        "86": [
+          0,
+          0
+        ],
+        "87": [
+          0,
+          0
+        ],
+        "88": [
+          0,
+          0
+        ],
+        "89": [
+          0,
+          0
+        ],
+        "90": [
+          0,
+          0
+        ],
+        "91": [
+          0,
+          0
+        ],
+        "92": [
+          0,
+          0
+        ],
+        "93": [
+          0,
+          0
+        ],
+        "94": [
+          0,
+          0
+        ],
+        "95": [
+          0,
+          0
+        ],
+        "96": [
+          0,
+          0
+        ],
+        "97": [
+          0,
+          0
+        ],
+        "98": [
+          0,
+          0
+        ],
+        "99": [
+          0,
+          0
+        ]
+      },
+      "states": {
+        "0": "waiting",
+        "1": "waiting",
+        "2": "waiting",
+        "3": "waiting",
+        "4": "waiting",
+        "5": "waiting",
+        "6": "waiting",
+        "7": "waiting",
+        "8": "waiting",
+        "9": "waiting",
+        "10": "waiting",
+        "11": "waiting",
+        "12": "waiting",
+        "13": "waiting",
+        "14": "waiting",
+        "15": "waiting",
+        "16": "waiting",
+        "17": "waiting",
+        "18": "waiting",
+        "19": "waiting",
+        "20": "waiting",
+        "21": "waiting",
+        "22": "waiting",
+        "23": "waiting",
+        "24": "waiting",
+        "25": "waiting",
+        "26": "waiting",
+        "27": "waiting",
+        "28": "waiting",
+        "29": "waiting",
+        "30": "waiting",
+        "31": "waiting",
+        "32": "waiting",
+        "33": "waiting",
+        "34": "waiting",
+        "35": "waiting",
+        "36": "waiting",
+        "37": "waiting",
+        "38": "waiting",
+        "39": "waiting",
+        "40": "waiting",
+        "41": "waiting",
+        "42": "waiting",
+        "43": "waiting",
+        "44": "waiting",
+        "45": "waiting",
+        "46": "waiting",
+        "47": "waiting",
+        "48": "waiting",
+        "49": "waiting",
+        "50": "waiting",
+        "51": "waiting",
+        "52": "waiting",
+        "53": "waiting",
+        "54": "waiting",
+        "55": "waiting",
+        "56": "waiting",
+        "57": "waiting",
+        "58": "waiting",
+        "59": "waiting",
+        "60": "waiting",
+        "61": "waiting",
+        "62": "waiting",
+        "63": "waiting",
+        "64": "waiting",
+        "65": "waiting",
+        "66": "waiting",
+        "67": "waiting",
+        "68": "waiting",
+        "69": "waiting",
+        "70": "waiting",
+        "71": "waiting",
+        "72": "waiting",
+        "73": "waiting",
+        "74": "waiting",
+        "75": "waiting",
+        "76": "waiting",
+        "77": "waiting",
+        "78": "waiting",
+        "79": "waiting",
+        "80": "waiting",
+        "81": "waiting",
+        "82": "waiting",
+        "83": "waiting",
+        "84": "waiting",
+        "85": "waiting",
+        "86": "waiting",
+        "87": "waiting",
+        "88": "waiting",
+        "89": "waiting",
+        "90": "waiting",
+        "91": "waiting",
+        "92": "waiting",
+        "93": "waiting",
+        "94": "waiting",
+        "95": "waiting",
+        "96": "waiting",
+        "97": "waiting",
+        "98": "waiting",
+        "99": "waiting"
+      },
+      "communications": []
+    },
+    "performance_data": {
+      "problem_sizes": [
+        10,
+        20,
+        50,
+        100
+      ],
+      "detection_times": [
+        0.10864114761352539,
+        0.10864114761352539,
+        0.10864114761352539,
+        0.10864114761352539
+      ],
+      "methods": [
+        "dl\u00b2",
+        "Cycle Detection",
+        "Resource Analysis"
+      ],
+      "accuracies": [
+        0.95,
+        0.88,
+        0.82
+      ],
+      "communication_overhead": [
+        0.1,
+        0.2,
+        0.15,
+        0.3
+      ],
+      "resolution_times": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ]
+    },
+    "pattern_data": {
+      "communication_types": {
+        "broadcast": 45,
+        "send": 30,
+        "recv": 25
+      },
+      "patterns": {
+        "pattern1": 20,
+        "pattern2": 15,
+        "pattern3": 10
+      },
+      "deadlock_risk": {
+        "pattern1": 0.8,
+        "pattern2": 0.6,
+        "pattern3": 0.4
+      },
+      "temporal_patterns": [
+        {
+          "timestamp": 1760029598.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029593.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029588.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029583.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029578.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029573.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029568.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029563.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029558.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029553.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029548.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029543.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029538.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029533.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029528.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029523.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029518.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029513.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029508.8509934,
+          "count": 5
+        },
+        {
+          "timestamp": 1760029503.8509934,
+          "count": 5
+        }
+      ]
+    },
+    "detection_results": {
+      "true_positives": 8,
+      "false_positives": 2,
+      "true_negatives": 85,
+      "false_negatives": 5
+    },
+    "detection_times": [
+      0.10864114761352539,
+      0.10864114761352539,
+      0.10864114761352539,
+      0.10864114761352539,
+      0.10864114761352539
+    ]
+  }
+}

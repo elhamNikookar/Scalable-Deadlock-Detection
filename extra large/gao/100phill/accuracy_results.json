@@ -1,0 +1,88 @@
+{
+  "total_tests": 6,
+  "accuracy_metrics": {
+    "accuracy": 0.6666666666666666,
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1_score": 0.6666666666666666,
+    "specificity": 1.0,
+    "true_positives": 2,
+    "false_positives": 0,
+    "true_negatives": 2,
+    "false_negatives": 2
+  },
+  "test_results": [
+    {
+      "test_name": "No Deadlock - Simple Communication",
+      "expected_deadlock": false,
+      "detected_deadlock": false,
+      "result_type": "True Negative",
+      "detection_time": 0.001969575881958008,
+      "analysis_info": {
+        "detection_time": 1760030336.3694563,
+        "total_operations": 3,
+        "total_processes": 10,
+        "analysis_methods": [],
+        "cycle_detection": {
+          "cycles_found": 0,
+          "cycles": []
+        },
+        "resource_analysis": {
+          "resource_conflicts": [],
+          "deadlocks": [],
+          "blocking_chains": []
+        },
+        "pattern_analysis": {
+          "pattern_risks": {
+            "broadcast_2": {
+              "operation_count": 1,
+              "risk_factors": [],
+              "risk_score": 0.0
+            },
+            "send_1": {
+              "operation_count": 1,
+              "risk_factors": [
+                "High resource contention: 1.00"
+              ],
+              "risk_score": 0.3333333333333333
+            },
+            "recv_1": {
+              "operation_count": 1,
+              "risk_factors": [
+                "High resource contention: 1.00"
+              ],
+              "risk_score": 0.3333333333333333
+            }
+          },
+          "deadlocks": [],
+          "risk_factors": []
+        },
+        "static_analysis": {
+          "deadlocks": [],
+          "potential_issues": [],
+          "optimization_suggestions": []
+        },
+        "final_deadlocks": [],
+        "deadlock_count": 0
+      },
+      "recommendations": [],
+      "performance_metrics": {
+        "analysis_time": 0.001969575881958008,
+        "operations_analyzed": 3
+      }
+    },
+    {
+      "test_name": "Circular Wait Deadlock",
+      "expected_deadlock": true,
+      "detected_deadlock": true,
+      "result_type": "True Positive",
+      "detection_time": 0.003544330596923828,
+      "analysis_info": {
+        "detection_time": 1760030336.3714259,
+        "total_operations": 5,
+        "total_processes": 5,
+        "analysis_methods": [],
+        "cycle_detection": {
+          "cycles_found": 1,
+          "cycles": [
+            

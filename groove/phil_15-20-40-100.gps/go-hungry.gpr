@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="go-hungry">
+        <attr name="transitionLabel">
+            <string></string>
+        </attr>
+        <attr name="enabled">
+            <string>true</string>
+        </attr>
+        <attr name="priority">
+            <string>0</string>
+        </attr>
+        <attr name="printFormat">
+            <string></string>
+        </attr>
+        <attr name="remark">
+            <string></string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n59">
+            <attr name="layout">
+                <string>119 74 28 24</string>
+            </attr>
+        </node>
+        <edge from="n59" to="n59">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n59" to="n59">
+            <attr name="label">
+                <string>new:hungry</string>
+            </attr>
+            <attr name="layout">
+                <string>863 0 133 86 43 120 40 74 133 86 12</string>
+            </attr>
+        </edge>
+        <edge from="n59" to="n59">
+            <attr name="label">
+                <string>del:think</string>
+            </attr>
+            <attr name="layout">
+                <string>108 3 133 86 172 118 172 70 133 86 12</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="reach_2">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n4">
+            <attr name="layout">
+                <string>190 150 23 15</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>356 265 40 30</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>371 113 23 15</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>238 28 40 30</string>
+            </attr>
+        </node>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+            <attr name="layout">
+                <string>377 -4 376 280 201 157 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n0">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+            <attr name="layout">
+                <string>377 -4 376 280 201 157 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n4">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>hold</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>hasLeft</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

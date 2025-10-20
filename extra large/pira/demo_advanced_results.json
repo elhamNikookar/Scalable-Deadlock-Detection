@@ -1,0 +1,5003 @@
+{
+  "simulation_info": {
+    "num_philosophers": 50,
+    "deadlock_probability": 0.5,
+    "max_iterations": 100,
+    "execution_time": 0.21444058418273926
+  },
+  "statistics": {
+    "deadlocks_found": 51,
+    "total_iterations": 100,
+    "execution_time": 0.21444058418273926,
+    "states_explored": 100,
+    "deadlock_states": [
+      {
+        "iteration": 9,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 8,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 41,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.25424864095099553,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.232
+        },
+        "timestamp": 1758052943.6656284
+      },
+      {
+        "iteration": 10,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 9,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 40,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.25824864095099553,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.23600000000000002
+        },
+        "timestamp": 1758052943.6681662
+      },
+      {
+        "iteration": 11,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 10,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 39,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.26224864095099554,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.24000000000000002
+        },
+        "timestamp": 1758052943.6703324
+      },
+      {
+        "iteration": 12,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 11,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 38,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2662486409509955,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.24400000000000002
+        },
+        "timestamp": 1758052943.6722963
+      },
+      {
+        "iteration": 13,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 12,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 37,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2702486409509955,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.248
+        },
+        "timestamp": 1758052943.6742988
+      },
+      {
+        "iteration": 14,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 36,
+          "waiting_philosophers": 0,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2742486409509955,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.252
+        },
+        "timestamp": 1758052943.676291
+      },
+      {
+        "iteration": 15,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 12,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 36,
+          "waiting_philosophers": 0,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.26300070791490016,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.248
+        },
+        "timestamp": 1758052943.679253
+      },
+      {
+        "iteration": 16,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 11,
+          "eating_philosophers": 3,
+          "thinking_philosophers": 36,
+          "waiting_philosophers": 0,
+          "available_forks": 44,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.25185255415122954,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.24400000000000002
+        },
+        "timestamp": 1758052943.681365
+      },
+      {
+        "iteration": 17,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 12,
+          "eating_philosophers": 3,
+          "thinking_philosophers": 35,
+          "waiting_philosophers": 0,
+          "available_forks": 44,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.25585255415122954,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.448
+        },
+        "timestamp": 1758052943.6833532
+      },
+      {
+        "iteration": 18,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 11,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 35,
+          "waiting_philosophers": 0,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24194944208359234,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.444
+        },
+        "timestamp": 1758052943.685387
+      },
+      {
+        "iteration": 19,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 12,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 34,
+          "waiting_philosophers": 0,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24594944208359235,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.448
+        },
+        "timestamp": 1758052943.6875286
+      },
+      {
+        "iteration": 20,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 33,
+          "waiting_philosophers": 0,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2499494420835924,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.452
+        },
+        "timestamp": 1758052943.6899676
+      },
+      {
+        "iteration": 21,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 32,
+          "waiting_philosophers": 0,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2539494420835924,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.456
+        },
+        "timestamp": 1758052943.6919515
+      },
+      {
+        "iteration": 22,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 5,
+          "thinking_philosophers": 32,
+          "waiting_philosophers": 0,
+          "available_forks": 40,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24379506055865566,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6520000000000001
+        },
+        "timestamp": 1758052943.694258
+      },
+      {
+        "iteration": 23,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 12,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 32,
+          "waiting_philosophers": 0,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.23286972053905214,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6480000000000001
+        },
+        "timestamp": 1758052943.696252
+      },
+      {
+        "iteration": 24,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 31,
+          "waiting_philosophers": 0,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2368697205390522,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6520000000000001
+        },
+        "timestamp": 1758052943.6982665
+      },
+      {
+        "iteration": 25,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 30,
+          "waiting_philosophers": 0,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24086972053905217,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6560000000000001
+        },
+        "timestamp": 1758052943.7003458
+      },
+      {
+        "iteration": 26,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 15,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 29,
+          "waiting_philosophers": 0,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24486972053905215,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6600000000000001
+        },
+        "timestamp": 1758052943.7033746
+      },
+      {
+        "iteration": 27,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 16,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 28,
+          "waiting_philosophers": 0,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.24886972053905215,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6640000000000001
+        },
+        "timestamp": 1758052943.7053275
+      },
+      {
+        "iteration": 28,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 15,
+          "eating_philosophers": 7,
+          "thinking_philosophers": 28,
+          "waiting_philosophers": 0,
+          "available_forks": 36,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.2381042357779795,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.6600000000000001
+        },
+        "timestamp": 1758052943.709458
+      },
+      {
+        "iteration": 29,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 8,
+          "thinking_philosophers": 28,
+          "waiting_philosophers": 0,
+          "available_forks": 34,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22737316912998448,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.8560000000000001
+        },
+        "timestamp": 1758052943.7115562
+      },
+      {
+        "iteration": 30,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 15,
+          "eating_philosophers": 8,
+          "thinking_philosophers": 27,
+          "waiting_philosophers": 0,
+          "available_forks": 34,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.23137316912998446,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 0.8600000000000001
+        },
+        "timestamp": 1758052943.7137682
+      },
+      {
+        "iteration": 31,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 9,
+          "thinking_philosophers": 27,
+          "waiting_philosophers": 0,
+          "available_forks": 32,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_6",
+              "philosopher_5"
+            ],
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.7172449
+      },
+      {
+        "iteration": 32,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 8,
+          "thinking_philosophers": 28,
+          "waiting_philosophers": 0,
+          "available_forks": 34,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 0,
+          "resource_contention": 0.0,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.7185922
+      },
+      {
+        "iteration": 33,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 8,
+          "thinking_philosophers": 28,
+          "waiting_philosophers": 1,
+          "available_forks": 34,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.721995
+      },
+      {
+        "iteration": 34,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 7,
+          "thinking_philosophers": 29,
+          "waiting_philosophers": 1,
+          "available_forks": 36,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.7239475
+      },
+      {
+        "iteration": 35,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 6,
+          "thinking_philosophers": 30,
+          "waiting_philosophers": 1,
+          "available_forks": 38,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21",
+              "philosopher_23"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.725972
+      },
+      {
+        "iteration": 36,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 5,
+          "thinking_philosophers": 31,
+          "waiting_philosophers": 1,
+          "available_forks": 40,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_14",
+              "philosopher_13"
+            ],
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 1.0
+        },
+        "timestamp": 1758052943.7285187
+      },
+      {
+        "iteration": 37,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 32,
+          "waiting_philosophers": 1,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_22",
+              "philosopher_21"
+            ],
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.8522400000000001
+        },
+        "timestamp": 1758052943.729621
+      },
+      {
+        "iteration": 38,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 13,
+          "eating_philosophers": 3,
+          "thinking_philosophers": 33,
+          "waiting_philosophers": 1,
+          "available_forks": 44,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22080978788117062,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.6522400000000002
+        },
+        "timestamp": 1758052943.7321143
+      },
+      {
+        "iteration": 39,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 3,
+          "thinking_philosophers": 32,
+          "waiting_philosophers": 1,
+          "available_forks": 44,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22480978788117068,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.6562400000000002
+        },
+        "timestamp": 1758052943.7351537
+      },
+      {
+        "iteration": 40,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 33,
+          "waiting_philosophers": 1,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22480978788117068,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_41",
+              "philosopher_40"
+            ],
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.6562400000000002
+        },
+        "timestamp": 1758052943.7372236
+      },
+      {
+        "iteration": 41,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 14,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 34,
+          "waiting_philosophers": 1,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.22480978788117068,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_46",
+              "philosopher_47"
+            ],
+            [
+              "philosopher_48",
+              "philosopher_47"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.45624000000000003
+        },
+        "timestamp": 1758052943.738551
+      },
+      {
+        "iteration": 58,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 11,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 36,
+          "waiting_philosophers": 1,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.16349510512737453,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.24424
+        },
+        "timestamp": 1758052943.7714658
+      },
+      {
+        "iteration": 59,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 11,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 37,
+          "waiting_philosophers": 1,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.16349510512737453,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.24424
+        },
+        "timestamp": 1758052943.7737825
+      },
+      {
+        "iteration": 60,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 10,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 37,
+          "waiting_philosophers": 1,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.1551664023709924,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 2,
+          "resource_contention": 0.0008,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ],
+            [
+              "philosopher_43",
+              "philosopher_42"
+            ]
+          ],
+          "resource_contention": 0.0008,
+          "severity": 0.4402400000000001
+        },
+        "timestamp": 1758052943.7758498
+      },
+      {
+        "iteration": 61,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 9,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 37,
+          "waiting_philosophers": 2,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.1551664023709924,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ],
+            [
+              "philosopher_43",
+              "philosopher_42"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.43648
+        },
+        "timestamp": 1758052943.7773557
+      },
+      {
+        "iteration": 62,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 9,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 38,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.1551664023709924,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23648000000000002
+        },
+        "timestamp": 1758052943.7794106
+      },
+      {
+        "iteration": 63,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 8,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 38,
+          "waiting_philosophers": 2,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.14549608470257247,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23248000000000002
+        },
+        "timestamp": 1758052943.7825887
+      },
+      {
+        "iteration": 64,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 8,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 39,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.14549608470257247,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23248000000000002
+        },
+        "timestamp": 1758052943.784535
+      },
+      {
+        "iteration": 65,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 9,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 38,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.14949608470257245,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_37"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23648000000000002
+        },
+        "timestamp": 1758052943.7865984
+      },
+      {
+        "iteration": 67,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 8,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 39,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.1409115854986042,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_17",
+              "philosopher_16"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23248000000000002
+        },
+        "timestamp": 1758052943.7906976
+      },
+      {
+        "iteration": 71,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 9,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 38,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.14211970860518539,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_19",
+              "philosopher_20"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23648000000000002
+        },
+        "timestamp": 1758052943.7987666
+      },
+      {
+        "iteration": 73,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 8,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 39,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.13176520784395676,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_44",
+              "philosopher_43"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.23248000000000002
+        },
+        "timestamp": 1758052943.8036528
+      },
+      {
+        "iteration": 75,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 7,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 40,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.12378862288259063,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_11",
+              "philosopher_12"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.22848000000000002
+        },
+        "timestamp": 1758052943.8076124
+      },
+      {
+        "iteration": 76,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 6,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 40,
+          "waiting_philosophers": 2,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.11352440590902525,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_11",
+              "philosopher_12"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.22448
+        },
+        "timestamp": 1758052943.8097122
+      },
+      {
+        "iteration": 77,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 6,
+          "eating_philosophers": 1,
+          "thinking_philosophers": 41,
+          "waiting_philosophers": 2,
+          "available_forks": 48,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.11352440590902525,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_11",
+              "philosopher_12"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.22448
+        },
+        "timestamp": 1758052943.8118007
+      },
+      {
+        "iteration": 78,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 5,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 41,
+          "waiting_philosophers": 2,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.10067848607081205,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_11",
+              "philosopher_12"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.22048
+        },
+        "timestamp": 1758052943.8139153
+      },
+      {
+        "iteration": 82,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 6,
+          "eating_philosophers": 2,
+          "thinking_philosophers": 40,
+          "waiting_philosophers": 2,
+          "available_forks": 46,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.10121728362058625,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_31",
+              "philosopher_32"
+            ],
+            [
+              "philosopher_33",
+              "philosopher_32"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.42448
+        },
+        "timestamp": 1758052943.821573
+      },
+      {
+        "iteration": 92,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 3,
+          "eating_philosophers": 4,
+          "thinking_philosophers": 41,
+          "waiting_philosophers": 2,
+          "available_forks": 42,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.06720767147410117,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_39"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.21248000000000003
+        },
+        "timestamp": 1758052943.842602
+      },
+      {
+        "iteration": 93,
+        "features": {
+          "num_nodes": 100,
+          "num_edges": 100,
+          "num_philosophers": 50,
+          "num_forks": 50,
+          "hungry_philosophers": 3,
+          "eating_philosophers": 3,
+          "thinking_philosophers": 42,
+          "waiting_philosophers": 2,
+          "available_forks": 44,
+          "avg_degree": 2.0,
+          "density": 0.010101010101010102,
+          "is_strongly_connected": false,
+          "num_strongly_connected_components": 100,
+          "avg_hunger_level": 0.06720767147410117,
+          "avg_patience": 0.6760728721920521,
+          "total_requests": 4,
+          "resource_contention": 0.0016,
+          "graph_clustering": 0.0,
+          "assortativity": NaN
+        },
+        "deadlock_info": {
+          "type": "waiting_chain",
+          "cycles": [],
+          "waiting_chains": [
+            [
+              "philosopher_38",
+              "philosopher_39"
+            ]
+          ],
+          "resource_contention": 0.0016,
+          "severity": 0.21248000000000003
+        },
+        "timestamp": 1758052943.8447642
+      }
+    ],
+    "performance_metrics": {
+      "avg_hungry_philosophers": 9.31,
+      "max_hungry_philosophers": 16,
+      "avg_eating_philosophers": 2.18,
+      "avg_resource_contention": 0.0008480000000000001,
+      "max_resource_contention": 0.0016,
+      "avg_graph_density": 0.0101010101010101,
+      "avg_clustering": 0.0,
+      "stability_score": 0.1365947671033568
+    },
+    "graph_evolution": [
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 1,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 49,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.23436121414900302,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 2,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 48,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.23836121414900302,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 3,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 47,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24236121414900308,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 4,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 46,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24636121414900305,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 45,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25036121414900303,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 44,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25436121414900303,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 7,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 43,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2583612141490031,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.26236121414900304,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 0,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.26636121414900304,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25424864095099553,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25824864095099553,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 10,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.26224864095099554,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2662486409509955,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2702486409509955,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 0,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2742486409509955,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 0,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.26300070791490016,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 0,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25185255415122954,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 0,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.25585255415122954,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 0,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24194944208359234,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 34,
+        "waiting_philosophers": 0,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24594944208359235,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 33,
+        "waiting_philosophers": 0,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2499494420835924,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 32,
+        "waiting_philosophers": 0,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2539494420835924,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 5,
+        "thinking_philosophers": 32,
+        "waiting_philosophers": 0,
+        "available_forks": 40,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24379506055865566,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 32,
+        "waiting_philosophers": 0,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.23286972053905214,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 31,
+        "waiting_philosophers": 0,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2368697205390522,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 30,
+        "waiting_philosophers": 0,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24086972053905217,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 15,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 29,
+        "waiting_philosophers": 0,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24486972053905215,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 16,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 28,
+        "waiting_philosophers": 0,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.24886972053905215,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 15,
+        "eating_philosophers": 7,
+        "thinking_philosophers": 28,
+        "waiting_philosophers": 0,
+        "available_forks": 36,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.2381042357779795,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 8,
+        "thinking_philosophers": 28,
+        "waiting_philosophers": 0,
+        "available_forks": 34,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22737316912998448,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 15,
+        "eating_philosophers": 8,
+        "thinking_philosophers": 27,
+        "waiting_philosophers": 0,
+        "available_forks": 34,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.23137316912998446,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 9,
+        "thinking_philosophers": 27,
+        "waiting_philosophers": 0,
+        "available_forks": 32,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 8,
+        "thinking_philosophers": 28,
+        "waiting_philosophers": 0,
+        "available_forks": 34,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 0,
+        "resource_contention": 0.0,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 8,
+        "thinking_philosophers": 28,
+        "waiting_philosophers": 1,
+        "available_forks": 34,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 7,
+        "thinking_philosophers": 29,
+        "waiting_philosophers": 1,
+        "available_forks": 36,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 6,
+        "thinking_philosophers": 30,
+        "waiting_philosophers": 1,
+        "available_forks": 38,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 5,
+        "thinking_philosophers": 31,
+        "waiting_philosophers": 1,
+        "available_forks": 40,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 32,
+        "waiting_philosophers": 1,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 33,
+        "waiting_philosophers": 1,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22080978788117062,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 32,
+        "waiting_philosophers": 1,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22480978788117068,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 33,
+        "waiting_philosophers": 1,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22480978788117068,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 34,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22480978788117068,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22480978788117068,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 15,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 34,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.22880978788117065,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 14,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 34,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.21633537249208135,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 34,
+        "waiting_philosophers": 1,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.20708884764676616,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.20708884764676616,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.20708884764676616,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.19550629106458556,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.19550629106458556,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1846298334168509,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.18862983341685097,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.18862983341685097,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.19262983341685097,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1806115958174261,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 13,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1846115958174261,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 35,
+        "waiting_philosophers": 1,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.17597224374072656,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 12,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.17597224374072656,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 36,
+        "waiting_philosophers": 1,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.16349510512737453,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 11,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 1,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.16349510512737453,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 10,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 1,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1551664023709924,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 2,
+        "resource_contention": 0.0008,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 37,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1551664023709924,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1551664023709924,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14549608470257247,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14549608470257247,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14949608470257245,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14949608470257245,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1409115854986042,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.1409115854986042,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14491158549860417,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 10,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14891158549860417,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 38,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14211970860518539,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 9,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.14211970860518539,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 39,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.13176520784395676,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 8,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.13176520784395676,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 7,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.12378862288259063,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.11352440590902525,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.11352440590902525,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10067848607081205,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10067848607081205,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10467848607081205,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 7,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10867848607081204,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 40,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10121728362058625,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10121728362058625,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 6,
+        "eating_philosophers": 0,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 50,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.10121728362058625,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.09423007207223023,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 4,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.08364575153454577,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.08764575153454576,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 4,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.08091442774366708,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 4,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.08091442774366708,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 5,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.08491442774366709,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 4,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.07240669910219871,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 3,
+        "eating_philosophers": 4,
+        "thinking_philosophers": 41,
+        "waiting_philosophers": 2,
+        "available_forks": 42,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.06720767147410117,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 3,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 42,
+        "waiting_philosophers": 2,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.06720767147410117,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 3,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 43,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.06720767147410117,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 2,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 43,
+        "waiting_philosophers": 2,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.05690343674485704,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 2,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 44,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.05690343674485704,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 1,
+        "eating_philosophers": 3,
+        "thinking_philosophers": 44,
+        "waiting_philosophers": 2,
+        "available_forks": 44,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.04811921681675071,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 1,
+        "eating_philosophers": 2,
+        "thinking_philosophers": 45,
+        "waiting_philosophers": 2,
+        "available_forks": 46,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.04811921681675071,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      },
+      {
+        "num_nodes": 100,
+        "num_edges": 100,
+        "num_philosophers": 50,
+        "num_forks": 50,
+        "hungry_philosophers": 1,
+        "eating_philosophers": 1,
+        "thinking_philosophers": 46,
+        "waiting_philosophers": 2,
+        "available_forks": 48,
+        "avg_degree": 2.0,
+        "density": 0.010101010101010102,
+        "is_strongly_connected": false,
+        "num_strongly_connected_components": 100,
+        "avg_hunger_level": 0.04811921681675071,
+        "avg_patience": 0.6760728721920521,
+        "total_requests": 4,
+        "resource_contention": 0.0016,
+        "graph_clustering": 0.0,
+        "assortativity": NaN
+      }
+    ],
+    "philosopher_behavior": {}
+  },
+  "final_state": {
+    "philosophers": [
+      {
+        "id": 0,
+        "state": "thinking",
+        "hunger_level": 0.09493057453043385,
+        "patience": 0.797766400892072,
+        "priority": 4,
+        "eat_count": 0
+      },
+      {
+        "id": 1,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.9145344767842596,
+        "priority": 4,
+        "eat_count": 1
+      },
+      {
+        "id": 2,
+        "state": "thinking",
+        "hunger_level": 0.022309447110880842,
+        "patience": 0.7460785989463313,
+        "priority": 3,
+        "eat_count": 0
+      },
+      {
+        "id": 3,
+        "state": "thinking",
+        "hunger_level": 0.00905656372739072,
+        "patience": 0.8622123663050112,
+        "priority": 5,
+        "eat_count": 0
+      },
+      {
+        "id": 4,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.7179941962580708,
+        "priority": 4,
+        "eat_count": 1
+      },
+      {
+        "id": 5,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.914356013799674,
+        "priority": 10,
+        "eat_count": 1
+      },
+      {
+        "id": 6,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.681864255525595,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 7,
+        "state": "thinking",
+        "hunger_level": 0.028918706944913275,
+        "patience": 0.5647519710232385,
+        "priority": 6,
+        "eat_count": 0
+      },
+      {
+        "id": 8,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.9819297797136299,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 9,
+        "state": "thinking",
+        "hunger_level": 0.041515959892399645,
+        "patience": 0.49641371625639585,
+        "priority": 3,
+        "eat_count": 0
+      },
+      {
+        "id": 10,
+        "state": "thinking",
+        "hunger_level": 0.04496881837777966,
+        "patience": 0.6946414055025218,
+        "priority": 3,
+        "eat_count": 0
+      },
+      {
+        "id": 11,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.4166251487819337,
+        "priority": 2,
+        "eat_count": 1
+      },
+      {
+        "id": 12,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.6935585529578567,
+        "priority": 10,
+        "eat_count": 1
+      },
+      {
+        "id": 13,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.970341205230264,
+        "priority": 7,
+        "eat_count": 1
+      },
+      {
+        "id": 14,
+        "state": "waiting",
+        "hunger_level": 0.6007636785174859,
+        "patience": 0.8063688072080148,
+        "priority": 8,
+        "eat_count": 0
+      },
+      {
+        "id": 15,
+        "state": "thinking",
+        "hunger_level": 0.014973817195297112,
+        "patience": 0.306675638921988,
+        "priority": 10,
+        "eat_count": 0
+      },
+      {
+        "id": 16,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.8129978323234097,
+        "priority": 5,
+        "eat_count": 1
+      },
+      {
+        "id": 17,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.48176421193769037,
+        "priority": 4,
+        "eat_count": 1
+      },
+      {
+        "id": 18,
+        "state": "thinking",
+        "hunger_level": 0.07314799414598205,
+        "patience": 0.5120544078928366,
+        "priority": 4,
+        "eat_count": 0
+      },
+      {
+        "id": 19,
+        "state": "hungry",
+        "hunger_level": 0.5779188174236666,
+        "patience": 0.374978803851588,
+        "priority": 2,
+        "eat_count": 0
+      },
+      {
+        "id": 20,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.961324655591707,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 21,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.9233869815448259,
+        "priority": 2,
+        "eat_count": 1
+      },
+      {
+        "id": 22,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.6921701845517594,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 23,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.9162819175528798,
+        "priority": 5,
+        "eat_count": 1
+      },
+      {
+        "id": 24,
+        "state": "thinking",
+        "hunger_level": 0.09502014078674448,
+        "patience": 0.36923534785522427,
+        "priority": 10,
+        "eat_count": 0
+      },
+      {
+        "id": 25,
+        "state": "thinking",
+        "hunger_level": 0.04178681569601411,
+        "patience": 0.4285279757210693,
+        "priority": 3,
+        "eat_count": 0
+      },
+      {
+        "id": 26,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.8967142121309539,
+        "priority": 3,
+        "eat_count": 1
+      },
+      {
+        "id": 27,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.7390136903406905,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 28,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.304817011622207,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 29,
+        "state": "thinking",
+        "hunger_level": 0.10742651530219094,
+        "patience": 0.4694975450305265,
+        "priority": 3,
+        "eat_count": 0
+      },
+      {
+        "id": 30,
+        "state": "thinking",
+        "hunger_level": 0.0005669204510904136,
+        "patience": 0.6043482601071741,
+        "priority": 7,
+        "eat_count": 0
+      },
+      {
+        "id": 31,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.4004773560088444,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 32,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.8684627989528719,
+        "priority": 9,
+        "eat_count": 1
+      },
+      {
+        "id": 33,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.4193744326491708,
+        "priority": 5,
+        "eat_count": 1
+      },
+      {
+        "id": 34,
+        "state": "thinking",
+        "hunger_level": 0.03148915117247497,
+        "patience": 0.869138634842088,
+        "priority": 6,
+        "eat_count": 0
+      },
+      {
+        "id": 35,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.8131155570673485,
+        "priority": 3,
+        "eat_count": 1
+      },
+      {
+        "id": 36,
+        "state": "thinking",
+        "hunger_level": 0.0419332585879868,
+        "patience": 0.9131553133667312,
+        "priority": 6,
+        "eat_count": 0
+      },
+      {
+        "id": 37,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.5065629487477978,
+        "priority": 1,
+        "eat_count": 1
+      },
+      {
+        "id": 38,
+        "state": "waiting",
+        "hunger_level": 0.5560391286218209,
+        "patience": 0.6685351292512381,
+        "priority": 7,
+        "eat_count": 0
+      },
+      {
+        "id": 39,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.6698864874680822,
+        "priority": 2,
+        "eat_count": 1
+      },
+      {
+        "id": 40,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.8914014028546691,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 41,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.7601402283025698,
+        "priority": 9,
+        "eat_count": 1
+      },
+      {
+        "id": 42,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.7658080734418207,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 43,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.3058057825686115,
+        "priority": 2,
+        "eat_count": 1
+      },
+      {
+        "id": 44,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.6256589700270165,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 45,
+        "state": "eating",
+        "hunger_level": 0.0,
+        "patience": 0.7201482304613548,
+        "priority": 3,
+        "eat_count": 1
+      },
+      {
+        "id": 46,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.7238588079857637,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 47,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.9698945413951845,
+        "priority": 3,
+        "eat_count": 1
+      },
+      {
+        "id": 48,
+        "state": "thinking",
+        "hunger_level": 0.0,
+        "patience": 0.4734144159474111,
+        "priority": 8,
+        "eat_count": 1
+      },
+      {
+        "id": 49,
+        "state": "thinking",
+        "hunger_level": 0.023194532352982855,
+        "patience": 0.3855789261026372,
+        "priority": 10,
+        "eat_count": 0
+      }
+    ],
+    "forks": [
+      {
+        "id": 0,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 1,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 2,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 3,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 4,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 5,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 6,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 7,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 8,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 9,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 10,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 11,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 12,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 13,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 14,
+        "available": true,
+        "owner": null,
+        "request_queue": [
+          14
+        ]
+      },
+      {
+        "id": 15,
+        "available": true,
+        "owner": null,
+        "request_queue": [
+          14
+        ]
+      },
+      {
+        "id": 16,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 17,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 18,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 19,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 20,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 21,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 22,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 23,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 24,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 25,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 26,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 27,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 28,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 29,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 30,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 31,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 32,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 33,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 34,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 35,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 36,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 37,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 38,
+        "available": true,
+        "owner": null,
+        "request_queue": [
+          38
+        ]
+      },
+      {
+        "id": 39,
+        "available": true,
+        "owner": null,
+        "request_queue": [
+          38
+        ]
+      },
+      {
+        "id": 40,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 41,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 42,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 43,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 44,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 45,
+        "available": false,
+        "owner": 45,
+        "request_queue": []
+      },
+      {
+        "id": 46,
+        "available": false,
+        "owner": 45,
+        "request_queue": []
+      },
+      {
+        "id": 47,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 48,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      },
+      {
+        "id": 49,
+        "available": true,
+        "owner": null,
+        "request_queue": []
+      }
+    ]
+  }
+}

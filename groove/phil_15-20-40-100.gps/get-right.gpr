@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="get-right">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n51">
+            <attr name="layout">
+                <string>137 237 20 18</string>
+            </attr>
+        </node>
+        <node id="n52">
+            <attr name="layout">
+                <string>206 139 25 18</string>
+            </attr>
+        </node>
+        <node id="n53">
+            <attr name="layout">
+                <string>446 150 20 18</string>
+            </attr>
+        </node>
+        <edge from="n51" to="n52">
+            <attr name="label">
+                <string>right</string>
+            </attr>
+        </edge>
+        <edge from="n51" to="n51">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+        <edge from="n51" to="n51">
+            <attr name="label">
+                <string>del:hasLeft</string>
+            </attr>
+            <attr name="layout">
+                <string>120 5 147 246 232 270 232 223 147 246 12</string>
+            </attr>
+        </edge>
+        <edge from="n51" to="n51">
+            <attr name="label">
+                <string>new:eat</string>
+            </attr>
+            <attr name="layout">
+                <string>575 -11 147 246 92 279 83 225 147 246 12</string>
+            </attr>
+        </edge>
+        <edge from="n51" to="n52">
+            <attr name="label">
+                <string>new:hold</string>
+            </attr>
+            <attr name="layout">
+                <string>330 -18 147 246 152 176 217 145 12</string>
+            </attr>
+        </edge>
+        <edge from="n52" to="n52">
+            <attr name="label">
+                <string>Fork</string>
+            </attr>
+        </edge>
+        <edge from="n53" to="n52">
+            <attr name="label">
+                <string>left</string>
+            </attr>
+        </edge>
+        <edge from="n53" to="n52">
+            <attr name="label">
+                <string>not:hold</string>
+            </attr>
+            <attr name="layout">
+                <string>336 -2 456 159 291 179 218 148 12</string>
+            </attr>
+        </edge>
+        <edge from="n53" to="n53">
+            <attr name="label">
+                <string>Phil</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

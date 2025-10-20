@@ -1,0 +1,12 @@
+TPMC Simulation Results for Dining Philosophers Problem
+==================================================
+
+Number of philosophers: 100
+Number of forks: 100
+Number of iterations: 100
+Execution time: 0.07 seconds
+States explored: 100
+Deadlocks found: 0
+
+Deadlock Details:
+------------------------------
